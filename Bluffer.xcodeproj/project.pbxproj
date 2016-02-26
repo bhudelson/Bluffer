@@ -9,19 +9,37 @@
 /* Begin PBXBuildFile section */
 		CC109B411C7C17FA00606C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC109B401C7C17FA00606C4B /* AppDelegate.swift */; };
 		CC109B431C7C17FA00606C4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC109B421C7C17FA00606C4B /* ViewController.swift */; };
-		CC109B461C7C17FA00606C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC109B441C7C17FA00606C4B /* Main.storyboard */; };
 		CC109B481C7C17FA00606C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC109B471C7C17FA00606C4B /* Assets.xcassets */; };
 		CC109B4B1C7C17FA00606C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC109B491C7C17FA00606C4B /* LaunchScreen.storyboard */; };
+		CD827DA11C7FD4CE005F881D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD827DA01C7FD4CE005F881D /* Main.storyboard */; };
+		CD827DA31C7FDB17005F881D /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA21C7FDB17005F881D /* ReadyViewController.swift */; };
+		CD827DA51C7FE43F005F881D /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA41C7FE43F005F881D /* GuessViewController.swift */; };
+		CD827DA71C7FE44B005F881D /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA61C7FE44B005F881D /* ScoreViewController.swift */; };
+		CD827DA91C7FE45F005F881D /* VictoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA81C7FE45F005F881D /* VictoryViewController.swift */; };
+		CDFC6EF31C7FB98000CF2C9F /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC6EF21C7FB98000CF2C9F /* TutorialViewController.swift */; };
+		CDFC6EF51C7FC92C00CF2C9F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC6EF41C7FC92C00CF2C9F /* CategoryViewController.swift */; };
+		CDFC6EF71C7FC94500CF2C9F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC6EF61C7FC94500CF2C9F /* StartViewController.swift */; };
+		CDFC6EFA1C7FCB9700CF2C9F /* PoliticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC6EF91C7FCB9700CF2C9F /* PoliticsViewController.swift */; };
+		CDFC6EFC1C7FCBBF00CF2C9F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC6EFB1C7FCBBF00CF2C9F /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC109B3D1C7C17FA00606C4B /* Bluffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bluffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC109B401C7C17FA00606C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC109B421C7C17FA00606C4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CC109B451C7C17FA00606C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC109B471C7C17FA00606C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC109B4A1C7C17FA00606C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC109B4C1C7C17FA00606C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD827DA01C7FD4CE005F881D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CD827DA21C7FDB17005F881D /* ReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
+		CD827DA41C7FE43F005F881D /* GuessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
+		CD827DA61C7FE44B005F881D /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		CD827DA81C7FE45F005F881D /* VictoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictoryViewController.swift; sourceTree = "<group>"; };
+		CDFC6EF21C7FB98000CF2C9F /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		CDFC6EF41C7FC92C00CF2C9F /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		CDFC6EF61C7FC94500CF2C9F /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		CDFC6EF91C7FCB9700CF2C9F /* PoliticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticsViewController.swift; sourceTree = "<group>"; };
+		CDFC6EFB1C7FCBBF00CF2C9F /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,31 @@
 		CC109B3F1C7C17FA00606C4B /* Bluffer */ = {
 			isa = PBXGroup;
 			children = (
+				CDFC6EF11C7FB96D00CF2C9F /* View Controllers */,
 				CC109B401C7C17FA00606C4B /* AppDelegate.swift */,
 				CC109B421C7C17FA00606C4B /* ViewController.swift */,
-				CC109B441C7C17FA00606C4B /* Main.storyboard */,
+				CD827DA01C7FD4CE005F881D /* Main.storyboard */,
 				CC109B471C7C17FA00606C4B /* Assets.xcassets */,
 				CC109B491C7C17FA00606C4B /* LaunchScreen.storyboard */,
 				CC109B4C1C7C17FA00606C4B /* Info.plist */,
 			);
 			path = Bluffer;
+			sourceTree = "<group>";
+		};
+		CDFC6EF11C7FB96D00CF2C9F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDFC6EF21C7FB98000CF2C9F /* TutorialViewController.swift */,
+				CDFC6EF41C7FC92C00CF2C9F /* CategoryViewController.swift */,
+				CDFC6EF61C7FC94500CF2C9F /* StartViewController.swift */,
+				CDFC6EF91C7FCB9700CF2C9F /* PoliticsViewController.swift */,
+				CDFC6EFB1C7FCBBF00CF2C9F /* GameViewController.swift */,
+				CD827DA21C7FDB17005F881D /* ReadyViewController.swift */,
+				CD827DA41C7FE43F005F881D /* GuessViewController.swift */,
+				CD827DA61C7FE44B005F881D /* ScoreViewController.swift */,
+				CD827DA81C7FE45F005F881D /* VictoryViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD827DA11C7FD4CE005F881D /* Main.storyboard in Resources */,
 				CC109B4B1C7C17FA00606C4B /* LaunchScreen.storyboard in Resources */,
 				CC109B481C7C17FA00606C4B /* Assets.xcassets in Resources */,
-				CC109B461C7C17FA00606C4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +171,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD827DA31C7FDB17005F881D /* ReadyViewController.swift in Sources */,
+				CDFC6EFC1C7FCBBF00CF2C9F /* GameViewController.swift in Sources */,
+				CDFC6EF71C7FC94500CF2C9F /* StartViewController.swift in Sources */,
+				CDFC6EFA1C7FCB9700CF2C9F /* PoliticsViewController.swift in Sources */,
+				CDFC6EF51C7FC92C00CF2C9F /* CategoryViewController.swift in Sources */,
 				CC109B431C7C17FA00606C4B /* ViewController.swift in Sources */,
+				CD827DA91C7FE45F005F881D /* VictoryViewController.swift in Sources */,
+				CD827DA51C7FE43F005F881D /* GuessViewController.swift in Sources */,
+				CD827DA71C7FE44B005F881D /* ScoreViewController.swift in Sources */,
+				CDFC6EF31C7FB98000CF2C9F /* TutorialViewController.swift in Sources */,
 				CC109B411C7C17FA00606C4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +188,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CC109B441C7C17FA00606C4B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC109B451C7C17FA00606C4B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CC109B491C7C17FA00606C4B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +321,7 @@
 				CC109B511C7C17FA00606C4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
