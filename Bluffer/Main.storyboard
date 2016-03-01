@@ -245,7 +245,7 @@
         <!--Ready View Controller-->
         <scene sceneID="RlL-au-64J">
             <objects>
-                <viewController id="muW-Hb-57J" customClass="ReadyViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReadyViewController" id="muW-Hb-57J" customClass="ReadyViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fjh-JS-CDB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,9 +261,12 @@
                                 <rect key="frame" x="105" y="355" width="111" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="TAP TO REVEAL"/>
+                                <connections>
+                                    <action selector="onReady:" destination="muW-Hb-57J" eventType="touchUpInside" id="SIG-Gl-jSs"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PpQ-re-bN3">
-                                <rect key="frame" x="139" y="178" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PpQ-re-bN3">
+                                <rect key="frame" x="125" y="178" width="71" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -283,11 +286,11 @@
         <!--Game View Controller-->
         <scene sceneID="7jm-pc-K6P">
             <objects>
-                <viewController id="ja6-VJ-MEW" customClass="GameViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="ja6-VJ-MEW" customClass="GameViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bzj-1x-fkp" userLabel="Content View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="contentView" destination="bzj-1x-fkp" id="943-Du-FRb"/>
@@ -325,12 +328,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="trump" id="IeL-0o-Llu" customClass="PoliticsV">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="trump" id="IeL-0o-Llu">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQV-NX-d65" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -340,7 +343,7 @@
         <!--Guess View Controller-->
         <scene sceneID="BYT-ps-gIA">
             <objects>
-                <viewController id="Q1s-Kf-bhG" customClass="GuessViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GuessViewController" id="Q1s-Kf-bhG" customClass="GuessViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KWK-jV-koS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,11 +359,17 @@
                                 <rect key="frame" x="72" y="259" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Yes"/>
+                                <connections>
+                                    <action selector="onYes:" destination="Q1s-Kf-bhG" eventType="touchUpInside" id="P46-LF-7CD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HFp-eq-Ifn">
                                 <rect key="frame" x="194" y="259" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="No"/>
+                                <connections>
+                                    <action selector="onNo:" destination="Q1s-Kf-bhG" eventType="touchUpInside" id="JRN-se-rrh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -373,18 +382,11 @@
         <!--Score View Controller-->
         <scene sceneID="dft-8T-k5V">
             <objects>
-                <viewController id="Fse-YL-fSp" customClass="ScoreViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScoreViewController" id="Fse-YL-fSp" customClass="ScoreViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jmT-Gc-FeY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team 1 Scores!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CwG-47-rya">
-                                <rect key="frame" x="96" y="111" width="116" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Scoreboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="84e-Bt-QKH">
                                 <rect key="frame" x="84" y="188" width="152" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -427,8 +429,23 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASS TO OTHER TEAM &gt;&gt;&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rcC-Wg-AfW">
-                                <rect key="frame" x="53" y="450" width="215" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pass to the other team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rcC-Wg-AfW">
+                                <rect key="frame" x="74" y="442" width="173" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Lw-6e-1Dg">
+                                <rect key="frame" x="104" y="471" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tap To Continue"/>
+                                <connections>
+                                    <action selector="switchTeams:" destination="Fse-YL-fSp" eventType="touchUpInside" id="heD-jC-7hQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team 1 Scores!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CwG-47-rya">
+                                <rect key="frame" x="89" y="111" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -437,6 +454,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="roundsRemaining" destination="hO6-IB-r2w" id="NxU-hw-eWN"/>
+                        <outlet property="scoreHeadline" destination="CwG-47-rya" id="fQn-uV-ZwH"/>
+                        <outlet property="scoreLabel1" destination="sgE-MW-OUw" id="tnS-TK-34L"/>
+                        <outlet property="scoreLabel2" destination="0jy-l9-EdU" id="Lol-1f-ZtH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQQ-Ok-Xcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -445,7 +468,7 @@
         <!--Victory View Controller-->
         <scene sceneID="HVS-5Z-rbc">
             <objects>
-                <viewController id="Msn-cv-wpQ" customClass="VictoryViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VictoryViewController" id="Msn-cv-wpQ" customClass="VictoryViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ABg-fd-vxU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -478,15 +501,24 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Another Round" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3ZB-nf-jMR">
-                                <rect key="frame" x="84" y="448" width="151" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qv4-Y0-0kp">
+                                <rect key="frame" x="94" y="409" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team 1 Wins!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GFW-Gj-oht">
-                                <rect key="frame" x="106" y="111" width="101" height="21"/>
+                                <state key="normal" title="Play Another Game"/>
+                                <connections>
+                                    <action selector="replay:" destination="Msn-cv-wpQ" eventType="touchUpInside" id="A64-D7-WbB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dqi-hV-7Qx">
+                                <rect key="frame" x="144" y="457" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit "/>
+                                <connections>
+                                    <action selector="exit:" destination="Msn-cv-wpQ" eventType="touchUpInside" id="MS6-11-QbI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team 1 Wins!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GFW-Gj-oht">
+                                <rect key="frame" x="66" y="112" width="188" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -495,6 +527,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel1" destination="hy0-n2-f45" id="HI7-75-VX4"/>
+                        <outlet property="scoreLabel2" destination="Y5b-7G-OfC" id="39s-99-6Lt"/>
+                        <outlet property="victoryHeadline" destination="GFW-Gj-oht" id="19P-0F-A7f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uV8-Ue-6ap" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -517,7 +554,7 @@
         <image name="trump" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="be9-HM-05t"/>
         <segue reference="Fb5-xv-U8b"/>
-        <segue reference="dBX-rf-dVe"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,10 +12,41 @@ class ReadyViewController: UIViewController {
 
     @IBOutlet weak var team: UILabel!
     
+    var gameViewController: GameViewController!
+    
+    @IBAction func onReady(sender: AnyObject) {
+        
+        print("ReadyView - Team Describing: ", team.text)
+        print("ReadyView - Current Round: ", round)
+
+        
+//        gameViewController.showImage()
+        // Reveal the image / call GameViewController method "showImage"
+        NSNotificationCenter.defaultCenter().postNotificationName("show", object: nil)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        reloadData()
+    }
+    
+    func reloadData() {
+        if round > 0 && round % 2 == 0 {
+            // Even Round = Team 2 describes
+            team.text = "Team 2"
+        }
+        else
+        {
+            // Odd Round = Team 1 describes
+            team.text = "Team 1"
+        }
     }
 
     override func didReceiveMemoryWarning() {

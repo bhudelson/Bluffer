@@ -9,18 +9,22 @@
 import UIKit
 
 class CategoryViewController: UIViewController {
-    
-    public var categorySelected = String!("none")
-    
-    var gameControl: UIViewController!
+
+    var gameViewController: GameViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print("Category View Controller Loaded")
-        print("Category Selected: ", categorySelected) 
+        print("Category Selected: ", category) 
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        print("Category View Controller Did Appear")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,8 +34,11 @@ class CategoryViewController: UIViewController {
     
     @IBAction func selectPolitics(sender: AnyObject) {
         
-        print("Politics Selected")
-        categorySelected = "politics"
+        category = "politics"
+        print("Category Selected: ", category)
+        
+        // Start the game in GameViewController
+        NSNotificationCenter.defaultCenter().postNotificationName("category", object: nil)
     }
     
 

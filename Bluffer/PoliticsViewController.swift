@@ -10,6 +10,8 @@ import UIKit
 
 class PoliticsViewController: UIViewController {
     
+    var gameViewController: GameViewController!
+    
     var politicsImages: [UIImage] = [
         UIImage(named: "bush.png")!,
         UIImage(named: "kim.png")!,

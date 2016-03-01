@@ -16,6 +16,7 @@
 		CD827DA51C7FE43F005F881D /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA41C7FE43F005F881D /* GuessViewController.swift */; };
 		CD827DA71C7FE44B005F881D /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA61C7FE44B005F881D /* ScoreViewController.swift */; };
 		CD827DA91C7FE45F005F881D /* VictoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA81C7FE45F005F881D /* VictoryViewController.swift */; };
+		CDDF49591C84D600002B49AF /* GameVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDF49581C84D600002B49AF /* GameVariables.swift */; };
 		CDFC6EF31C7FB98000CF2C9F /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC6EF21C7FB98000CF2C9F /* TutorialViewController.swift */; };
 		CDFC6EF51C7FC92C00CF2C9F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC6EF41C7FC92C00CF2C9F /* CategoryViewController.swift */; };
 		CDFC6EF71C7FC94500CF2C9F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC6EF61C7FC94500CF2C9F /* StartViewController.swift */; };
@@ -35,6 +36,7 @@
 		CD827DA41C7FE43F005F881D /* GuessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
 		CD827DA61C7FE44B005F881D /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		CD827DA81C7FE45F005F881D /* VictoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictoryViewController.swift; sourceTree = "<group>"; };
+		CDDF49581C84D600002B49AF /* GameVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVariables.swift; sourceTree = "<group>"; };
 		CDFC6EF21C7FB98000CF2C9F /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		CDFC6EF41C7FC92C00CF2C9F /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		CDFC6EF61C7FC94500CF2C9F /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				CC109B471C7C17FA00606C4B /* Assets.xcassets */,
 				CC109B491C7C17FA00606C4B /* LaunchScreen.storyboard */,
 				CC109B4C1C7C17FA00606C4B /* Info.plist */,
+				CDDF49581C84D600002B49AF /* GameVariables.swift */,
 			);
 			path = Bluffer;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD827DA31C7FDB17005F881D /* ReadyViewController.swift in Sources */,
+				CDDF49591C84D600002B49AF /* GameVariables.swift in Sources */,
 				CDFC6EFC1C7FCBBF00CF2C9F /* GameViewController.swift in Sources */,
 				CDFC6EF71C7FC94500CF2C9F /* StartViewController.swift in Sources */,
 				CDFC6EFA1C7FCB9700CF2C9F /* PoliticsViewController.swift in Sources */,

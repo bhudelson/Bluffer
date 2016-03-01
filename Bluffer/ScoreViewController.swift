@@ -9,11 +9,86 @@
 import UIKit
 
 class ScoreViewController: UIViewController {
+    
+    var gameViewController: GameViewController!
 
+    @IBOutlet weak var scoreHeadline: UILabel!
+    
+    @IBOutlet weak var scoreLabel1: UILabel!
+    
+    @IBOutlet weak var scoreLabel2: UILabel!
+    
+    @IBOutlet weak var roundsRemaining: UILabel!
+    
+    @IBAction func switchTeams(sender: AnyObject) {
+        
+        print("ScoreView - Current Round: ", round)
+        print("ScoreView Rounds Remaining: ", totalRounds - round)
+        print("ScoreView - Team 1 Score: ", team1Score, " vs. Team 2 Score: ", team2Score)
+        
+        // Switch to other team, start new round
+        NSNotificationCenter.defaultCenter().postNotificationName("switch", object: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        reloadData()
+    }
+    
+    func reloadData() {
+        
+        print("ScoreViewController Appeared")
+        
+        if round % 2 == 0 && pointScored == true {
+            //EVEN ROUND = Team 2 described, Team 1 guessed correctly
+            //Team 1 gets a point
+            
+            scoreHeadline.text = "Team 1 Scores!"
+        }
+        else if round % 2 != 0 && pointScored == true {
+            //ODD ROUND = Team 1 described, Team 2 guessed correctly
+            //Team 2 gets a point
+            
+            scoreHeadline.text = "Team 2 Scores!"
+        }
+        else if pointScored == false && round % 2 == 0 {
+            
+            //Round is EVEN. Team 2 described and Team 1 guessed incorrectly
+            //So team 2 gets a point
+            
+            scoreHeadline.text = "Team 2 Scores!"
+        }
+        else if pointScored == false && round % 2 != 0
+        {
+            //Round is ODD. Team 1 described and Team 2 guessed incorrectly
+            //So team 1 gets a point
+            
+            scoreHeadline.text = "Team 1 Scores!"
+            
+        }
+        else
+        {
+            print("ERROR OCCURRED")
+        }
+        
+        print("Team 1: ", team1Score, " vs. Team 2: ", team2Score)
+        
+        
+        scoreLabel1.text = String(team1Score)
+        scoreLabel2.text = String(team2Score)
+        
+        print("Current Round: ", round)
+        print("Rounds Remaining: ", totalRounds - round)
+        
+        roundsRemaining.text = String(totalRounds-round)
+        
     }
 
     override func didReceiveMemoryWarning() {
