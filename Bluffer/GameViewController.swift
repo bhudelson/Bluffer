@@ -19,9 +19,13 @@ class GameViewController: UIViewController {
     
     //Category Child View Controllers - DECLARATION
     var politicsViewController: PoliticsViewController!
+    var spaceViewController: SpaceViewController!
+    var animalsViewController: AnimalsViewController!
+    var randomViewController: RandomViewController!
     
-    var currentCategoryViewController: UIViewController!
+    var currentCategoryViewController: ImagesViewController!
     
+    //Timer-related variables
     var currentTime: Int! = 20
     var timer: NSTimer!
     
@@ -41,7 +45,7 @@ class GameViewController: UIViewController {
         readyViewController.reloadData()
     }
     
-    func nextRound(notication: NSNotification) {
+    func nextRound() {
         
         //Runs for all except 1st round
         
@@ -74,10 +78,12 @@ class GameViewController: UIViewController {
     }
 
     
-    func categorySelected(notification: NSNotification){
+    func categorySelected(){
         
 
         print("Category Selected: ", category)
+        
+        currentCategoryViewController.reloadData()
         
         switch category {
         case "politics"  :
@@ -93,9 +99,52 @@ class GameViewController: UIViewController {
             politicsViewController.didMoveToParentViewController(self)
             
             currentCategoryViewController = politicsViewController
+            currentCategoryViewController.imageArray = politicsViewController.politicsImages
             
         case "animals"  :
-            print("Replace this line with animals viewcontroller addition to parent")
+            
+            // Add AnimalsViewController as child of GameViewController
+            // Set it as currentCategoryViewController
+            
+            print("AnimalsViewController added as child to GameViewController")
+            
+            animalsViewController.view.hidden = true
+            addChildViewController(animalsViewController)
+            contentView.addSubview(animalsViewController.view)
+            animalsViewController.didMoveToParentViewController(self)
+            
+            currentCategoryViewController = animalsViewController
+            currentCategoryViewController.imageArray = animalsViewController.animalsImages
+            
+        case "space"  :
+            
+            // Add SpaceViewController as child of GameViewController
+            // Set it as currentCategoryViewController
+            
+            print("SpaceViewController added as child to GameViewController")
+            
+            spaceViewController.view.hidden = true
+            addChildViewController(spaceViewController)
+            contentView.addSubview(spaceViewController.view)
+            spaceViewController.didMoveToParentViewController(self)
+            
+            currentCategoryViewController = spaceViewController
+            currentCategoryViewController.imageArray = spaceViewController.spaceImages
+            
+        case "random"  :
+            
+            // Add RandomViewController as child of GameViewController
+            // Set it as currentCategoryViewController
+            
+            print("RandomViewController added as child to GameViewController")
+            
+            randomViewController.view.hidden = true
+            addChildViewController(randomViewController)
+            contentView.addSubview(randomViewController.view)
+            randomViewController.didMoveToParentViewController(self)
+            
+            currentCategoryViewController = randomViewController
+            currentCategoryViewController.imageArray = randomViewController.randomImages
             
         case "tropical"  :
             print("Replace this line with tropical viewcontroller addition to parent")
@@ -106,23 +155,32 @@ class GameViewController: UIViewController {
             print( "ERROR OCCURRED / NO CATEGORY SELECTED")
         }
         
+        
         //Hide Category View Controller
         categoryViewController.view.hidden = true
 
         startRound()
     }
     
-    func showImage(notication: NSNotification) {
+    func showImage() {
         
         print("Image Showing")
         
         readyViewController.view.hidden = true
+        
+        //Clear the previous image from earlier round
+        currentCategoryViewController.clearImageView()
 
         currentCategoryViewController.view.alpha = 1 
         currentCategoryViewController.view.hidden = false
         
+        currentCategoryViewController.setCurrentImage(currentCategoryViewController.selectRandomIndex())
+        
+        //Select random index that hasn't been selected before during gameplay
+        
         UIView.animateWithDuration(3, delay: 0, options:[] , animations: { () -> Void in
-            self.currentCategoryViewController.view.alpha = 0
+            
+            self.currentCategoryViewController.imageView.alpha = 0
             
             }, completion: { (Bool) -> Void in
                 
@@ -135,41 +193,46 @@ class GameViewController: UIViewController {
     
     func trackPoint() {
         
-        if pointScored == true && round % 2 == 0 {
+        if correctGuess == true && round % 2 == 0 {
             
             //Round is EVEN. Team 2 described and Team 1 guessed correctly
             //So team 1 gets a point
             
+
             team1Score = ++team1Score
             
+            print("Round is Even. Team 2 got image, Team 1 guesses correctly")
             print("Team 1 Score: ", team1Score)
         }
-        else if pointScored == true && round % 2 != 0
+        else if correctGuess == true && round % 2 != 0
         {
             //Round is ODD. Team 1 described and Team 2 guessed
             //So team 2 gets a point
             
             team2Score = ++team2Score
             
+            print("Round is Odd. Team 1 got image, Team 2 guessed correctly")
             print("Team 2 Score: ", team2Score)
             
         }
-        else if pointScored == false && round % 2 == 0 {
+        else if correctGuess == false && round % 2 == 0 {
             
             //Round is EVEN. Team 2 described and Team 1 guessed incorrectly
             //So team 2 gets a point
             
-            team2Score = ++team1Score
+            team2Score = ++team2Score
             
+            print("Round is Even. Team 2 got image, Team 1 guessed INCORRECTLY")
             print("Team 2 Score: ", team2Score)
         }
-        else if pointScored == false && round % 2 != 0
+        else if correctGuess == false && round % 2 != 0
         {
             //Round is ODD. Team 1 described and Team 2 guessed incorrectly
             //So team 1 gets a point
             
             team1Score = ++team1Score
             
+            print("Round is Odd. Team 1 got image, Team 2 guessed INCORRECTLY")
             print("Team 1 Score: ", team1Score)
             
         }
@@ -184,12 +247,6 @@ class GameViewController: UIViewController {
         
     }
     
-    func showScoreboard(notification: NSNotification) {
-        
-        scoreViewController.view.hidden = false
-        scoreViewController.reloadData()
-        
-    }
     
     func showScoreboard() {
         
@@ -198,17 +255,16 @@ class GameViewController: UIViewController {
         
     }
     
-    func restart(notification: NSNotification) {
+    func restart() {
         
-        print("restart function in GameViewController called")
-        
-        resetGame()
-        
-        print("RESTART FUCNTION CALLED. Round: ", round) 
+        print("Restart function in GameViewController called")
         
         victoryViewController.view.hidden = true
-
+        
         categoryViewController.view.hidden = false
+        
+        resetGame()
+    
         
     }
 
@@ -235,18 +291,35 @@ class GameViewController: UIViewController {
         
         victoryViewController = storyboard.instantiateViewControllerWithIdentifier("VictoryViewController") as! VictoryViewController
         victoryViewController.gameViewController = self
-        
-        currentCategoryViewController = storyboard.instantiateInitialViewController()
+    
         
         // Category View Controllers - INSTANTIATION
         
+        currentCategoryViewController = storyboard.instantiateViewControllerWithIdentifier("ImagesViewController") as! ImagesViewController
+        currentCategoryViewController.gameViewController = self
+        
         politicsViewController = storyboard.instantiateViewControllerWithIdentifier("PoliticsViewController") as! PoliticsViewController
         politicsViewController.gameViewController = self
+        
+        spaceViewController = storyboard.instantiateViewControllerWithIdentifier("SpaceViewController") as! SpaceViewController
+        spaceViewController.gameViewController = self
+        
+        animalsViewController = storyboard.instantiateViewControllerWithIdentifier("AnimalsViewController") as! AnimalsViewController
+        animalsViewController.gameViewController = self
+        
+        randomViewController = storyboard.instantiateViewControllerWithIdentifier("RandomViewController") as! RandomViewController
+        randomViewController.gameViewController = self
         
         // Add Category View Controller as child
         addChildViewController(categoryViewController)
         contentView.addSubview(categoryViewController.view)
         categoryViewController.didMoveToParentViewController(self)
+        
+        //Add Current Category View Controller as child
+        addChildViewController(currentCategoryViewController)
+        contentView.addSubview(currentCategoryViewController.view)
+        currentCategoryViewController.didMoveToParentViewController(self)
+        currentCategoryViewController.view.hidden = true
         
         // Add Ready View Controller as child & HIDE
         addChildViewController(readyViewController)
@@ -272,6 +345,9 @@ class GameViewController: UIViewController {
         victoryViewController.didMoveToParentViewController(self)
         victoryViewController.view.hidden = true
         
+        
+        /* Deprecated code using Notifications for passing data between classes 
+
         //Notification for communicating category selection from child view to parent view
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "categorySelected:", name:"category", object: nil)
         
@@ -289,8 +365,8 @@ class GameViewController: UIViewController {
         
         //Notification for tracking when restart game from Victory screen
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "restart:", name:"restart", object: nil)
-        
-        
+
+        */
         
         
     }

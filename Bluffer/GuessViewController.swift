@@ -21,70 +21,45 @@ class GuessViewController: UIViewController {
     
     @IBAction func onYes(sender: AnyObject) {
         
-        
-        
-        
-        // Track the point in GameViewController
-
-        pointScored = true
-
-        
-        gameViewController.trackPoint()
+    
+        correctGuess = true
         
         print("GuessView - Current Round: ", round)
         print("GuessView - Team 1 Score: ", team1Score, " vs. Team 2 Score: ", team2Score)
         
-        print("A team guessed correctly. Update score")
+        print("GuessView - Correct Guess. Increment score for guessing team.")
         
         //If this is the final round, go right to Victory page not Score page
         
+        gameViewController.trackPoint()
+        
         if round == totalRounds
         {
-            NSNotificationCenter.defaultCenter().postNotificationName("switch", object: nil)
+            gameViewController.nextRound()
             
         }
-        
+
     }
     
     
     @IBAction func onNo(sender: AnyObject) {
         
-        //Load the current scoreboard in GameViewController
-        print("Other team guessed incorrectly. Just go directly to scoreboard")
-        pointScored = false
+        correctGuess = false
         
-        /*
+        print("GuessView - Current Round: ", round)
+        print("GuessView - Team 1 Score: ", team1Score, " vs. Team 2 Score: ", team2Score)
         
-        if round % 2 == 0 {
-            
-            //Round is EVEN. Team 2 described and Team 1 guessed incorrectly
-            //So team 2 gets a point
-            
-            team2Score = ++team1Score
-            
-            print("Team 2 Score: ", team2Score)
-        }
-        else
-        {
-            //Round is ODD. Team 1 described and Team 2 guessed incorrectly
-            //So team 1 gets a point
-            
-            team1Score = ++team1Score
-            
-            print("Team 1 Score: ", team1Score)
-            
-        }
-        */
-        
-        gameViewController.trackPoint()
+        print("GuessView - Incorrect Guess. Increment score for describing team.")
         
         //If this is the final round, go right to Victory page not Score page
         
+        gameViewController.trackPoint()
+        
         if round == totalRounds
         {
-            NSNotificationCenter.defaultCenter().postNotificationName("switch", object: nil)
+            gameViewController.nextRound()
         }
-        
+
     }
 
     

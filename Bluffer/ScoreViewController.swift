@@ -27,7 +27,7 @@ class ScoreViewController: UIViewController {
         print("ScoreView - Team 1 Score: ", team1Score, " vs. Team 2 Score: ", team2Score)
         
         // Switch to other team, start new round
-        NSNotificationCenter.defaultCenter().postNotificationName("switch", object: nil)
+        gameViewController.nextRound()
     }
     
     
@@ -46,26 +46,26 @@ class ScoreViewController: UIViewController {
         
         print("ScoreViewController Appeared")
         
-        if round % 2 == 0 && pointScored == true {
+        if round % 2 == 0 && correctGuess == true {
             //EVEN ROUND = Team 2 described, Team 1 guessed correctly
             //Team 1 gets a point
             
             scoreHeadline.text = "Team 1 Scores!"
         }
-        else if round % 2 != 0 && pointScored == true {
+        else if round % 2 != 0 && correctGuess == true {
             //ODD ROUND = Team 1 described, Team 2 guessed correctly
             //Team 2 gets a point
             
             scoreHeadline.text = "Team 2 Scores!"
         }
-        else if pointScored == false && round % 2 == 0 {
+        else if correctGuess == false && round % 2 == 0 {
             
             //Round is EVEN. Team 2 described and Team 1 guessed incorrectly
             //So team 2 gets a point
             
             scoreHeadline.text = "Team 2 Scores!"
         }
-        else if pointScored == false && round % 2 != 0
+        else if correctGuess == false && round % 2 != 0
         {
             //Round is ODD. Team 1 described and Team 2 guessed incorrectly
             //So team 1 gets a point

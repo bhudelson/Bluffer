@@ -26,16 +26,12 @@ class VictoryViewController: UIViewController {
         print("VictoryView - Team 1 Score: ", team1Score, " vs. Team 2 Score: ", team2Score)
         
         // Restart a new game
-        NSNotificationCenter.defaultCenter().postNotificationName("restart", object: nil)
+        gameViewController.restart()
     }
-    
     
     @IBAction func exit(sender: AnyObject) {
         
         print("Exit To Splash")
-        
-        //let parentVC = self.parentViewController
-        //parentVC.dismissViewControllerAnimated(false, completion: nil)
         
         self.dismissViewControllerAnimated(false, completion: nil)
     }

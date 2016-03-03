@@ -22,7 +22,7 @@ class ReadyViewController: UIViewController {
         
 //        gameViewController.showImage()
         // Reveal the image / call GameViewController method "showImage"
-        NSNotificationCenter.defaultCenter().postNotificationName("show", object: nil)
+        gameViewController.showImage()
         
     }
     

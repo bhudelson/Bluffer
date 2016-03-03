@@ -22,7 +22,7 @@ var team1Score = 0
 var team2Score = 0
 
 //Used to track whether a team scored a point in the current round
-var pointScored : Bool = false
+var correctGuess : Bool = false
 
 func resetGame() {
     
@@ -32,7 +32,7 @@ func resetGame() {
     category = "none"
     team1Score = 0
     team2Score = 0
-    pointScored = false
+    correctGuess = false
     
 }
 

@@ -38,10 +38,40 @@ class CategoryViewController: UIViewController {
         print("Category Selected: ", category)
         
         // Start the game in GameViewController
-        NSNotificationCenter.defaultCenter().postNotificationName("category", object: nil)
+        gameViewController.categorySelected()
     }
     
+    @IBAction func selectAnimals(sender: AnyObject) {
+        
+        category = "animals"
+        print("Category Selected: ", category)
+        
+        // Start the game in GameViewController
+        gameViewController.categorySelected()
+    }
 
+ 
+    @IBAction func selectSpace(sender: AnyObject) {
+        
+        category = "space"
+        print("Category Selected: ", category)
+        
+        // Start the game in GameViewController
+        gameViewController.categorySelected()
+    }
+    
+    
+    @IBAction func selectRandom(sender: AnyObject) {
+        
+        category = "random"
+        print("Category Selected: ", category)
+        
+        // Start the game in GameViewController
+        gameViewController.categorySelected()
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 

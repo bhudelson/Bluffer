@@ -8,26 +8,28 @@
 
 import UIKit
 
-class PoliticsViewController: UIViewController {
-    
-    var gameViewController: GameViewController!
+class PoliticsViewController: ImagesViewController {
     
     var politicsImages: [UIImage] = [
-        UIImage(named: "bush.png")!,
-        UIImage(named: "kim.png")!,
-        UIImage(named: "lincoln.png")!,
-        UIImage(named: "putin.png")!,
-        UIImage(named: "rushmore.png")!,
-        UIImage(named: "trump.png")!
+        UIImage(named: "politics-bush.png")!,
+        UIImage(named: "politics-kim.png")!,
+        UIImage(named: "politics-lincoln.png")!,
+        UIImage(named: "politics-putin.png")!,
+        UIImage(named: "politics-rushmore.png")!,
+        UIImage(named: "politics-trump.png")!,
+        UIImage(named: "politics-borat.png")!,
+        UIImage(named: "politics-clinton.png")!,
+        UIImage(named: "politics-dance.png")!,
+        UIImage(named: "politics-obama.png")!,
+        UIImage(named: "politics-rocky.png")!,
+        UIImage(named: "politics-substitution.png")!
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print("# of images in politicsImages array: ", politicsImages.capacity)
-        
-        
-
+    
         // Do any additional setup after loading the view.
     }
 

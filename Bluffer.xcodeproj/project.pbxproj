@@ -16,6 +16,10 @@
 		CD827DA51C7FE43F005F881D /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA41C7FE43F005F881D /* GuessViewController.swift */; };
 		CD827DA71C7FE44B005F881D /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA61C7FE44B005F881D /* ScoreViewController.swift */; };
 		CD827DA91C7FE45F005F881D /* VictoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA81C7FE45F005F881D /* VictoryViewController.swift */; };
+		CDB374091C88D209003300A5 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB374081C88D209003300A5 /* ImagesViewController.swift */; };
+		CDB3740B1C88E4D7003300A5 /* SpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3740A1C88E4D7003300A5 /* SpaceViewController.swift */; };
+		CDB3740D1C88E5A0003300A5 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3740C1C88E5A0003300A5 /* AnimalsViewController.swift */; };
+		CDB3740F1C88E88D003300A5 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3740E1C88E88D003300A5 /* RandomViewController.swift */; };
 		CDDF49591C84D600002B49AF /* GameVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDF49581C84D600002B49AF /* GameVariables.swift */; };
 		CDFC6EF31C7FB98000CF2C9F /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC6EF21C7FB98000CF2C9F /* TutorialViewController.swift */; };
 		CDFC6EF51C7FC92C00CF2C9F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC6EF41C7FC92C00CF2C9F /* CategoryViewController.swift */; };
@@ -36,6 +40,10 @@
 		CD827DA41C7FE43F005F881D /* GuessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
 		CD827DA61C7FE44B005F881D /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		CD827DA81C7FE45F005F881D /* VictoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictoryViewController.swift; sourceTree = "<group>"; };
+		CDB374081C88D209003300A5 /* ImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		CDB3740A1C88E4D7003300A5 /* SpaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceViewController.swift; sourceTree = "<group>"; };
+		CDB3740C1C88E5A0003300A5 /* AnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
+		CDB3740E1C88E88D003300A5 /* RandomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 		CDDF49581C84D600002B49AF /* GameVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVariables.swift; sourceTree = "<group>"; };
 		CDFC6EF21C7FB98000CF2C9F /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		CDFC6EF41C7FC92C00CF2C9F /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +106,10 @@
 				CD827DA41C7FE43F005F881D /* GuessViewController.swift */,
 				CD827DA61C7FE44B005F881D /* ScoreViewController.swift */,
 				CD827DA81C7FE45F005F881D /* VictoryViewController.swift */,
+				CDB374081C88D209003300A5 /* ImagesViewController.swift */,
+				CDB3740A1C88E4D7003300A5 /* SpaceViewController.swift */,
+				CDB3740C1C88E5A0003300A5 /* AnimalsViewController.swift */,
+				CDB3740E1C88E88D003300A5 /* RandomViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -179,10 +191,14 @@
 				CDFC6EFC1C7FCBBF00CF2C9F /* GameViewController.swift in Sources */,
 				CDFC6EF71C7FC94500CF2C9F /* StartViewController.swift in Sources */,
 				CDFC6EFA1C7FCB9700CF2C9F /* PoliticsViewController.swift in Sources */,
+				CDB3740F1C88E88D003300A5 /* RandomViewController.swift in Sources */,
+				CDB3740D1C88E5A0003300A5 /* AnimalsViewController.swift in Sources */,
 				CDFC6EF51C7FC92C00CF2C9F /* CategoryViewController.swift in Sources */,
 				CC109B431C7C17FA00606C4B /* ViewController.swift in Sources */,
+				CDB3740B1C88E4D7003300A5 /* SpaceViewController.swift in Sources */,
 				CD827DA91C7FE45F005F881D /* VictoryViewController.swift in Sources */,
 				CD827DA51C7FE43F005F881D /* GuessViewController.swift in Sources */,
+				CDB374091C88D209003300A5 /* ImagesViewController.swift in Sources */,
 				CD827DA71C7FE44B005F881D /* ScoreViewController.swift in Sources */,
 				CDFC6EF31C7FB98000CF2C9F /* TutorialViewController.swift in Sources */,
 				CC109B411C7C17FA00606C4B /* AppDelegate.swift in Sources */,
