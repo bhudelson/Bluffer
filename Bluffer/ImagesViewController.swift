@@ -20,6 +20,10 @@ class ImagesViewController: UIViewController {
     
     var imageView: UIImageView!
     
+    @IBOutlet weak var contentView: UIView!
+    
+    @IBOutlet weak var timerLabel: UILabel!
+    
     func setCurrentImage(imageIndex: Int) {
         
         let currentImage = imageArray[imageIndex]
@@ -28,15 +32,16 @@ class ImagesViewController: UIViewController {
         
         imageView.frame = self.view.frame
         
-        view.addSubview(imageView)
+        contentView.addSubview(imageView)
         
     }
     
     func clearImageView() {
         
-        for view in self.view.subviews{
+        for view in contentView.subviews{
             view.removeFromSuperview()
         }
+
     }
     
     func selectRandomIndex() -> Int {
@@ -67,6 +72,7 @@ class ImagesViewController: UIViewController {
         
         imageArray.removeAll()
         selectedIndexArray.removeAll()
+        timerLabel.text = String(gameTime)
     }
     
     override func viewDidLoad() {
@@ -74,7 +80,9 @@ class ImagesViewController: UIViewController {
         
         imageArray = []
         selectedIndexArray = []
-
+        
+        timerLabel?.text = String(gameTime)
+        
         // Do any additional setup after loading the view.
     }
 

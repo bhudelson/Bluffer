@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Bluffer/ImagesViewController.swift"
-            timestampString = "478736241.06843"
+            timestampString = "478741594.384906"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "setCurrentImage(_:)"
             landmarkType = "5">
          </BreakpointContent>

@@ -26,7 +26,7 @@ class GameViewController: UIViewController {
     var currentCategoryViewController: ImagesViewController!
     
     //Timer-related variables
-    var currentTime: Int! = 20
+    var timeRemaining: Int! = gameTime
     var timer: NSTimer!
     
     @IBOutlet var contentView: UIView!
@@ -98,7 +98,6 @@ class GameViewController: UIViewController {
             contentView.addSubview(politicsViewController.view)
             politicsViewController.didMoveToParentViewController(self)
             
-            currentCategoryViewController = politicsViewController
             currentCategoryViewController.imageArray = politicsViewController.politicsImages
             
         case "animals"  :
@@ -113,7 +112,6 @@ class GameViewController: UIViewController {
             contentView.addSubview(animalsViewController.view)
             animalsViewController.didMoveToParentViewController(self)
             
-            currentCategoryViewController = animalsViewController
             currentCategoryViewController.imageArray = animalsViewController.animalsImages
             
         case "space"  :
@@ -128,7 +126,6 @@ class GameViewController: UIViewController {
             contentView.addSubview(spaceViewController.view)
             spaceViewController.didMoveToParentViewController(self)
             
-            currentCategoryViewController = spaceViewController
             currentCategoryViewController.imageArray = spaceViewController.spaceImages
             
         case "random"  :
@@ -143,7 +140,6 @@ class GameViewController: UIViewController {
             contentView.addSubview(randomViewController.view)
             randomViewController.didMoveToParentViewController(self)
             
-            currentCategoryViewController = randomViewController
             currentCategoryViewController.imageArray = randomViewController.randomImages
             
         case "tropical"  :
@@ -178,7 +174,9 @@ class GameViewController: UIViewController {
         
         //Select random index that hasn't been selected before during gameplay
         
-        UIView.animateWithDuration(3, delay: 0, options:[] , animations: { () -> Void in
+        startTimer()
+        
+        UIView.animateWithDuration(Double(gameTime), delay: 0, options:[] , animations: { () -> Void in
             
             self.currentCategoryViewController.imageView.alpha = 0
             
@@ -374,9 +372,12 @@ class GameViewController: UIViewController {
     func onTimer() {
         //timerLabel.text = "\(currentTime)"
         
-        currentTime = currentTime - 1
+        timeRemaining = timeRemaining - 1
+        print("Timer Countdown: ", timeRemaining)
         
-        if currentTime < 0 {
+        currentCategoryViewController.timerLabel.text = String(timeRemaining)
+        
+        if timeRemaining < 0 {
             stopTimer()
         }
         
@@ -384,11 +385,16 @@ class GameViewController: UIViewController {
     
     func startTimer() {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "onTimer", userInfo: nil, repeats: true)
-        currentTime = 20
+        
+        
     }
     
     func stopTimer() {
         timer.invalidate()
+        
+        //reset timer value
+        timeRemaining = gameTime
+        currentCategoryViewController.timerLabel.text = String(timeRemaining)
     }
     
     
