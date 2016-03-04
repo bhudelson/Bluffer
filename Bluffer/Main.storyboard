@@ -70,7 +70,8 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Skip"/>
                                         <connections>
-                                            <segue destination="ja6-VJ-MEW" kind="modal" id="ZFi-gR-SAR"/>
+                                            <action selector="onSkip3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t05-wB-84k"/>
+                                            <segue destination="ja6-VJ-MEW" kind="modal" identifier="SkipTutorial1" id="ZFi-gR-SAR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,7 +93,8 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Skip"/>
                                         <connections>
-                                            <segue destination="ja6-VJ-MEW" kind="modal" id="be9-HM-05t"/>
+                                            <action selector="onSkip2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJF-qz-Vp8"/>
+                                            <segue destination="ja6-VJ-MEW" kind="modal" identifier="SkipTutorial2" id="be9-HM-05t"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -113,7 +115,8 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Start Game"/>
                                         <connections>
-                                            <segue destination="ja6-VJ-MEW" kind="modal" id="6XA-Ca-SBG"/>
+                                            <action selector="onStartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ns2-CT-CDP"/>
+                                            <segue destination="ja6-VJ-MEW" kind="modal" identifier="StartGame" id="n6Z-CG-9uR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -661,7 +664,7 @@
         <image name="trump" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="be9-HM-05t"/>
         <segue reference="Fb5-xv-U8b"/>
+        <segue reference="n6Z-CG-9uR"/>
     </inferredMetricsTieBreakers>
 </document>

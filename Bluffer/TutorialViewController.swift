@@ -13,6 +13,25 @@ class TutorialViewController: UIViewController {
     
     @IBOutlet var scrollView: UIScrollView!
     
+
+    @IBAction func onSkip3(sender: AnyObject) {
+    }
+    
+    @IBAction func onSkip2(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func onStartGame(sender: AnyObject) {
+        
+        //NOTE BUG HERE
+        // When a game is finisheed and user taps "Exit"
+        // Will exit to the Tutorial screen if that was loaded prior to the game
+        // Instead of the main screen
+        
+        performSegueWithIdentifier("StartGame", sender: self)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
