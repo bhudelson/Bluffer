@@ -14,7 +14,7 @@ import UIKit
 // GAME TRACKING
 var newGame = false
 var round = 0
-var totalRounds = 3
+var totalRounds = 4
 
 var category = String("none")
 

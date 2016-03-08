@@ -14,6 +14,7 @@ class ReadyViewController: UIViewController {
     
     var gameViewController: GameViewController!
     
+
     @IBAction func onReady(sender: AnyObject) {
         
         print("ReadyView - Team Describing: ", team.text)

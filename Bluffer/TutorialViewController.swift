@@ -10,6 +10,7 @@ import UIKit
 
 class TutorialViewController: UIViewController {
 
+    @IBOutlet weak var pageControl: UIPageControl!
     
     @IBOutlet var scrollView: UIScrollView!
     

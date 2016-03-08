@@ -32,8 +32,11 @@ class VictoryViewController: UIViewController {
     @IBAction func exit(sender: AnyObject) {
         
         print("Exit To Splash")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let startViewController = storyboard.instantiateInitialViewController()
         
-        self.dismissViewControllerAnimated(false, completion: nil)
+        let application = UIApplication.sharedApplication()
+        application.keyWindow?.rootViewController = startViewController
     }
     
     override func viewDidLoad() {
