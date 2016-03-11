@@ -57,15 +57,15 @@ class VictoryViewController: UIViewController {
         
         if team1Score > team2Score
         {
-            victoryHeadline.text = "Team 1 Wins!"
+            victoryHeadline.text = "TEAM  1  WINS!"
         }
         else if team2Score > team1Score
         {
-            victoryHeadline.text = "Team 2 Wins!"
+            victoryHeadline.text = "TEAM  2  WINS!"
         }
         else if team1Score == team2Score
         {
-            victoryHeadline.text = "Game Ends In A Tie!"
+            victoryHeadline.text = "IT'S  A  TIE!"
         }
         else
         {

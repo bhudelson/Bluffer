@@ -41,12 +41,12 @@ class ReadyViewController: UIViewController {
     func reloadData() {
         if round > 0 && round % 2 == 0 {
             // Even Round = Team 2 describes
-            team.text = "Team 2"
+            team.text = "TEAM 2  GET  READY!"
         }
         else
         {
             // Odd Round = Team 1 describes
-            team.text = "Team 1"
+            team.text = "TEAM 1  GET  READY!"
         }
     }
 
