@@ -18,6 +18,8 @@
 		CC2CFE6F1C8E8C3D003A6498 /* Dosis-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2CFE681C8E8C3D003A6498 /* Dosis-Medium.ttf */; };
 		CC2CFE701C8E8C3D003A6498 /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2CFE691C8E8C3D003A6498 /* Dosis-Regular.ttf */; };
 		CC2CFE711C8E8C3D003A6498 /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2CFE6A1C8E8C3D003A6498 /* Dosis-SemiBold.ttf */; };
+		CC41153D1C94F9F40053E5C1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41153C1C94F9F40053E5C1 /* Common.swift */; };
+		CC41153F1C95050C0053E5C1 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41153E1C95050C0053E5C1 /* WalkthroughViewController.swift */; };
 		CD827DA11C7FD4CE005F881D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD827DA01C7FD4CE005F881D /* Main.storyboard */; };
 		CD827DA31C7FDB17005F881D /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA21C7FDB17005F881D /* ReadyViewController.swift */; };
 		CD827DA51C7FE43F005F881D /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA41C7FE43F005F881D /* GuessViewController.swift */; };
@@ -49,6 +51,8 @@
 		CC2CFE681C8E8C3D003A6498 /* Dosis-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Medium.ttf"; sourceTree = "<group>"; };
 		CC2CFE691C8E8C3D003A6498 /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.ttf"; sourceTree = "<group>"; };
 		CC2CFE6A1C8E8C3D003A6498 /* Dosis-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-SemiBold.ttf"; sourceTree = "<group>"; };
+		CC41153C1C94F9F40053E5C1 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CC41153E1C95050C0053E5C1 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WalkthroughViewController.swift; path = ../WalkthroughViewController.swift; sourceTree = "<group>"; };
 		CD827DA01C7FD4CE005F881D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CD827DA21C7FDB17005F881D /* ReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
 		CD827DA41C7FE43F005F881D /* GuessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				CC109B401C7C17FA00606C4B /* AppDelegate.swift */,
 				CC109B421C7C17FA00606C4B /* ViewController.swift */,
 				CD827DA01C7FD4CE005F881D /* Main.storyboard */,
+				CC41153C1C94F9F40053E5C1 /* Common.swift */,
 				CC109B471C7C17FA00606C4B /* Assets.xcassets */,
 				CC109B491C7C17FA00606C4B /* LaunchScreen.storyboard */,
 				CC109B4C1C7C17FA00606C4B /* Info.plist */,
@@ -118,6 +123,7 @@
 		CDFC6EF11C7FB96D00CF2C9F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CC41153E1C95050C0053E5C1 /* WalkthroughViewController.swift */,
 				CDFC6EF21C7FB98000CF2C9F /* TutorialViewController.swift */,
 				CDFC6EF41C7FC92C00CF2C9F /* CategoryViewController.swift */,
 				CDFC6EF61C7FC94500CF2C9F /* StartViewController.swift */,
@@ -214,8 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC41153D1C94F9F40053E5C1 /* Common.swift in Sources */,
 				CD827DA31C7FDB17005F881D /* ReadyViewController.swift in Sources */,
 				CDDF49591C84D600002B49AF /* GameVariables.swift in Sources */,
+				CC41153F1C95050C0053E5C1 /* WalkthroughViewController.swift in Sources */,
 				CDFC6EFC1C7FCBBF00CF2C9F /* GameViewController.swift in Sources */,
 				CDFC6EF71C7FC94500CF2C9F /* StartViewController.swift in Sources */,
 				CDFC6EFA1C7FCB9700CF2C9F /* PoliticsViewController.swift in Sources */,

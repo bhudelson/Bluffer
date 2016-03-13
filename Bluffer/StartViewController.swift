@@ -10,8 +10,11 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    @IBOutlet weak var logoView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         print("Start View Controller Loaded") 
 
@@ -23,6 +26,13 @@ class StartViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+     override func viewDidAppear(animated: Bool) {
+        logoView.transform = CGAffineTransformMakeScale(1, 1)
+        logoView.alpha = 0.6
+        
+        
+        UIView.animateWithDuration(1.2, delay: 1, options: [UIViewAnimationOptions.Repeat, UIViewAnimationOptions.Autoreverse], animations: { () -> Void in self.logoView.transform = CGAffineTransformMakeScale(1.2, 1.2); self.logoView.alpha = 1}, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
@@ -35,3 +45,4 @@ class StartViewController: UIViewController {
     */
 
 }
+

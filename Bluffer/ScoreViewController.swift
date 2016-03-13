@@ -50,27 +50,27 @@ class ScoreViewController: UIViewController {
             //EVEN ROUND = Team 2 described, Team 1 guessed correctly
             //Team 1 gets a point
             
-            scoreHeadline.text = "Team 1 Scores!"
+            scoreHeadline.text = "TEAM  1  SCORES!"
         }
         else if round % 2 != 0 && correctGuess == true {
             //ODD ROUND = Team 1 described, Team 2 guessed correctly
             //Team 2 gets a point
             
-            scoreHeadline.text = "Team 2 Scores!"
+            scoreHeadline.text = "TEAM  2  SCORES!"
         }
         else if correctGuess == false && round % 2 == 0 {
             
             //Round is EVEN. Team 2 described and Team 1 guessed incorrectly
             //So team 2 gets a point
             
-            scoreHeadline.text = "Team 2 Scores!"
+            scoreHeadline.text = "TEAM  2  SCORES!"
         }
         else if correctGuess == false && round % 2 != 0
         {
             //Round is ODD. Team 1 described and Team 2 guessed incorrectly
             //So team 1 gets a point
             
-            scoreHeadline.text = "Team 1 Scores!"
+            scoreHeadline.text = "TEAM  1  SCORES!"
             
         }
         else

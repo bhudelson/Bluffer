@@ -52,10 +52,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="home" id="fuB-nG-5se">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="homeBg-1" id="fuB-nG-5se">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wpe-kQ-lDV">
+                                <rect key="frame" x="72" y="455" width="176" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="30"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ja6-VJ-MEW" kind="modal" modalTransitionStyle="crossDissolve" id="dBX-rf-dVe"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rdd-zl-Inh">
                                 <rect key="frame" x="100" y="510" width="121" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
@@ -67,24 +78,135 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" id="JmO-OD-Mpi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wpe-kQ-lDV">
-                                <rect key="frame" x="72" y="455" width="176" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="30"/>
-                                <state key="normal" title="Start Game">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ja6-VJ-MEW" kind="modal" id="dBX-rf-dVe"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blufferLogo-2" id="xdT-TE-O12">
+                                <rect key="frame" x="20" y="129" width="280" height="283"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="logoView" destination="xdT-TE-O12" id="Ghw-II-ecF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c05-Mk-fOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-158" y="-309"/>
+        </scene>
+        <!--Walkthrough View Controller-->
+        <scene sceneID="RrD-4O-XG1">
+            <objects>
+                <viewController id="dto-al-UQx" customClass="WalkthroughViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rsb-Y8-fjq">
+                        <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="C0H-Zz-rL9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="M66-cb-iKS" userLabel="bg1">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xD5-Id-RcF">
+                                                <rect key="frame" x="269" y="19" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <state key="normal" title="Skip">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onSkip3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D2v-zU-dhK"/>
+                                                </connections>
+                                            </button>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial1" id="cOz-Il-Nm8">
+                                                <rect key="frame" x="40" y="139" width="240" height="291"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="Q2t-tK-o9h" userLabel="bg2">
+                                        <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u7w-a0-0ko">
+                                                <rect key="frame" x="263" y="25" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <state key="normal" title="Skip">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onSkip3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2iO-Ve-hqV"/>
+                                                </connections>
+                                            </button>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial2" id="4NQ-ev-rha">
+                                                <rect key="frame" x="28" y="155" width="263" height="259"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="S5A-Tp-39b" userLabel="bg3">
+                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NBG-0r-0jV">
+                                                <rect key="frame" x="275" y="22" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <state key="normal" title="Skip">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onSkip3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FR4-st-hxd"/>
+                                                </connections>
+                                            </button>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial3" id="Qcr-4D-7Aj">
+                                                <rect key="frame" x="31" y="131" width="258" height="306"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="GR8-KU-LqT" userLabel="bg4">
+                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ylI-Ji-7Om">
+                                                <rect key="frame" x="72" y="483" width="177" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="playNowIcon"/>
+                                                <connections>
+                                                    <action selector="onStartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P6o-A2-jLu"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial4" id="wfZ-dj-C9F">
+                                                <rect key="frame" x="40" y="156" width="240" height="257"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="gUm-Jy-utl">
+                                <rect key="frame" x="127" y="511" width="66" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1280" height="568"/>
+                    <connections>
+                        <outlet property="pageControl" destination="gUm-Jy-utl" id="69Z-JJ-bw2"/>
+                        <outlet property="scrollView" destination="C0H-Zz-rL9" id="vb6-aW-ToA"/>
+                        <outlet property="startButton" destination="ylI-Ji-7Om" id="gW6-gw-mb7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J18-AK-J9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="-951"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -94,6 +216,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="center" id="Yjz-9Q-50p">
+                                <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial3" id="ujV-bT-fHc">
+                                        <rect key="frame" x="31" y="119" width="258" height="306"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fsh-Tj-VQx">
+                                        <rect key="frame" x="72" y="487" width="177" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="playNowIcon"/>
+                                        <connections>
+                                            <action selector="onStartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VDP-do-maG"/>
+                                            <segue destination="ja6-VJ-MEW" kind="modal" identifier="StartGame" id="lHo-yA-G0z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="center" id="sMA-Zp-DFV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -142,26 +284,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="center" id="Yjz-9Q-50p">
-                                <rect key="frame" x="640" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial3" id="ujV-bT-fHc">
-                                        <rect key="frame" x="31" y="119" width="258" height="306"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fsh-Tj-VQx">
-                                        <rect key="frame" x="72" y="487" width="177" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="playNowIcon"/>
-                                        <connections>
-                                            <action selector="onStartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VDP-do-maG"/>
-                                            <segue destination="ja6-VJ-MEW" kind="modal" identifier="StartGame" id="lHo-yA-G0z"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                     </scrollView>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -199,31 +321,31 @@
                             </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="PoliticsIcon" id="he0-2y-i6t">
                                 <rect key="frame" x="56" y="93" width="73" height="79"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tropicalIcon" id="HKA-Ib-MVt">
                                 <rect key="frame" x="55" y="357" width="74" height="79"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="animalIcon" id="3Qg-MR-zfQ">
                                 <rect key="frame" x="188" y="96" width="74" height="74"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="spaceIcon" id="gsQ-0v-krb">
-                                <rect key="frame" x="56" y="226" width="74" height="79"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <rect key="frame" x="56" y="226" width="73" height="79"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="randomIcon" id="s3H-KC-UaV">
                                 <rect key="frame" x="185" y="360" width="74" height="74"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="eightiesIcon" id="FiS-1Y-5jP">
                                 <rect key="frame" x="188" y="226" width="74" height="79"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POLITICS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="em0-c8-cDC">
                                 <rect key="frame" x="65" y="178" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -258,7 +380,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RANDOM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dba-nu-MoR">
                                 <rect key="frame" x="190" y="443" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -319,6 +441,20 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="animalsIcon" destination="3Qg-MR-zfQ" id="7Jv-kd-5lb"/>
+                        <outlet property="animalsLabel" destination="tkD-Wh-PN1" id="IHs-QM-xae"/>
+                        <outlet property="eightiesIcon" destination="FiS-1Y-5jP" id="SBz-pO-XF8"/>
+                        <outlet property="eightiesLabel" destination="heE-Ce-H8x" id="BoN-g5-8Vd"/>
+                        <outlet property="politicsIcon" destination="he0-2y-i6t" id="dlK-5K-80Y"/>
+                        <outlet property="politicsLabel" destination="em0-c8-cDC" id="Izy-y9-3Lp"/>
+                        <outlet property="randomIcon" destination="s3H-KC-UaV" id="JR7-rb-PxX"/>
+                        <outlet property="randomLabel" destination="Dba-nu-MoR" id="yZq-tG-wzu"/>
+                        <outlet property="spaceIcon" destination="gsQ-0v-krb" id="jf8-Zq-Edc"/>
+                        <outlet property="spaceLabel" destination="MJ2-RX-Znl" id="XVC-QI-9Yd"/>
+                        <outlet property="tropicsIcon" destination="HKA-Ib-MVt" id="sJX-uZ-hqu"/>
+                        <outlet property="tropicsLabel" destination="flJ-jQ-A9W" id="A8y-ln-Vkz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WvT-7k-fJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,20 +512,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEAM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PpQ-re-bN3">
-                                <rect key="frame" x="0.0" y="93" width="320" height="39"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="28"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qIU-fX-7pP">
                                 <rect key="frame" x="72" y="485" width="177" height="41"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="startIcon"/>
-                                <connections>
-                                    <action selector="onReady:" destination="muW-Hb-57J" eventType="touchUpInside" id="U8T-q0-jjh"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K7r-em-TrF">
                                 <rect key="frame" x="28" y="171" width="272" height="88"/>
@@ -424,10 +550,25 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jN8-tX-ldt">
+                                <rect key="frame" x="72" y="485" width="182" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onReady:" destination="muW-Hb-57J" eventType="touchUpInside" id="v57-oF-sXT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEAM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PpQ-re-bN3">
+                                <rect key="frame" x="0.0" y="61" width="320" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="startButton" destination="qIU-fX-7pP" id="j5u-dx-Qqs"/>
                         <outlet property="team" destination="PpQ-re-bN3" id="QGY-2q-ojE"/>
                     </connections>
                 </viewController>
@@ -815,9 +956,10 @@
         <image name="animalIcon" width="80" height="80"/>
         <image name="backArrow" width="30" height="19"/>
         <image name="blackCircle" width="65" height="65"/>
+        <image name="blufferLogo-2" width="227" height="227"/>
         <image name="bush" width="320" height="568"/>
         <image name="eightiesIcon" width="80" height="80"/>
-        <image name="home" width="320" height="568"/>
+        <image name="homeBg-1" width="320" height="568"/>
         <image name="kim" width="320" height="568"/>
         <image name="lincoln" width="320" height="568"/>
         <image name="nextRoundMedium" width="177" height="41"/>
@@ -837,11 +979,12 @@
         <image name="tutorial1" width="240" height="291"/>
         <image name="tutorial2" width="263" height="259"/>
         <image name="tutorial3" width="258" height="306"/>
+        <image name="tutorial4" width="132" height="241"/>
         <image name="yesIcon" width="66" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fb5-xv-U8b"/>
-        <segue reference="Mji-9g-WM6"/>
         <segue reference="dBX-rf-dVe"/>
+        <segue reference="Fb5-xv-U8b"/>
+        <segue reference="85G-Rq-CK9"/>
     </inferredMetricsTieBreakers>
 </document>

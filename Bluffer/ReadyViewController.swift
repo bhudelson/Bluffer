@@ -11,6 +11,7 @@ import UIKit
 class ReadyViewController: UIViewController {
 
     @IBOutlet weak var team: UILabel!
+    @IBOutlet weak var startButton: UIButton!
     
     var gameViewController: GameViewController!
     
@@ -29,11 +30,18 @@ class ReadyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(animated: Bool) {
+        
+        startButton.transform = CGAffineTransformMakeScale(0.9, 0.9)
+        startButton.alpha = 0.6
+        
+        
+        UIView.animateWithDuration(1.2, delay: 0, options: [UIViewAnimationOptions.Repeat, UIViewAnimationOptions.Autoreverse], animations: { () -> Void in self.startButton.transform = CGAffineTransformMakeScale(1, 1); self.startButton.alpha = 1}, completion: nil)
         
         reloadData()
     }
