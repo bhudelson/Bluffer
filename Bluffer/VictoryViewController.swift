@@ -10,6 +10,8 @@ import UIKit
 
 class VictoryViewController: UIViewController {
     
+    @IBOutlet weak var cheerleadersImage: UIImageView!
+    
     var gameViewController: GameViewController!
 
     @IBOutlet weak var victoryHeadline: UILabel!
@@ -49,9 +51,16 @@ class VictoryViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         
         print("VictoryViewController Did Appear")
+        
+        cheerleadersImage.transform = CGAffineTransformMakeScale(0.9, 0.9)
+        cheerleadersImage.alpha = 0.7
+        
+        
+        UIView.animateWithDuration(0.5, delay: 0, options: [UIViewAnimationOptions.Repeat, UIViewAnimationOptions.Autoreverse], animations: { () -> Void in self.cheerleadersImage.transform = CGAffineTransformMakeScale(1, 1); self.cheerleadersImage.alpha = 1}, completion: nil)
+        
         reloadData()
         
-            }
+    }
     
     func reloadData() {
         

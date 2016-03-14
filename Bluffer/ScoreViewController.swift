@@ -9,6 +9,7 @@
 import UIKit
 
 class ScoreViewController: UIViewController {
+    @IBOutlet weak var passLabel: UILabel!
     
     var gameViewController: GameViewController!
 
@@ -38,6 +39,14 @@ class ScoreViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        
+        
+        passLabel.transform = CGAffineTransformMakeScale(1, 1)
+        passLabel.alpha = 0
+        
+        
+        UIView.animateWithDuration(1, delay: 2, options: [UIViewAnimationOptions.Repeat, UIViewAnimationOptions.Autoreverse], animations: { () -> Void in self.passLabel.transform = CGAffineTransformMakeScale(1, 1); self.passLabel.alpha = 1}, completion: nil)
+        
         
         reloadData()
     }
