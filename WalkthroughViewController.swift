@@ -24,21 +24,21 @@ class WalkthroughViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
     }
 
-//    func scrollViewDidEndDecelerating(scrollView: UIScrollView!) {
-//        // Get the current page based on the scroll offset
-//        let page : Int = Int(round(scrollView.contentOffset.x / 320))
-//        
-//        // Set the current page, so the dots will update
-//        
-//        pageControl.currentPage = page
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView!) {
+        // Get the current page based on the scroll offset
+        let page : Int = Int(round(scrollView.contentOffset.x / 320))
+        
+        // Set the current page, so the dots will update
+        
+        pageControl.currentPage = page
 //        if page == 3 {
 //            pageControl.hidden = true
 //            UIView.animateWithDuration(0.5, animations: {
 //                
-//                self.startButton.alpha = 1
+////                self.startButton.alpha = 1
 //            })
 //        }
-//    }
+    }
     
     @IBAction func onStartGame(sender: AnyObject) {
         

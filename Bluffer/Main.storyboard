@@ -50,8 +50,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="homeBg-1" id="fuB-nG-5se">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="homeBg-1" id="fuB-nG-5se">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="571"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wpe-kQ-lDV">
@@ -73,7 +73,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="JmO-OD-Mpi"/>
+                                    <segue destination="dto-al-UQx" kind="modal" id="M8S-fS-N28"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blufferLogo-2" id="xdT-TE-O12">
@@ -83,6 +83,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="logoView" destination="xdT-TE-O12" id="Ghw-II-ecF"/>
                     </connections>
@@ -107,6 +108,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial1" id="cOz-Il-Nm8">
+                                                <rect key="frame" x="40" y="139" width="240" height="291"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xD5-Id-RcF">
                                                 <rect key="frame" x="269" y="19" width="30" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,13 +119,9 @@
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="onSkip3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D2v-zU-dhK"/>
+                                                    <segue destination="ja6-VJ-MEW" kind="modal" id="aG4-lN-fkg"/>
                                                 </connections>
                                             </button>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial1" id="cOz-Il-Nm8">
-                                                <rect key="frame" x="40" y="139" width="240" height="291"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
@@ -135,7 +136,7 @@
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="onSkip3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2iO-Ve-hqV"/>
+                                                    <segue destination="ja6-VJ-MEW" kind="modal" id="v1M-ea-NiI"/>
                                                 </connections>
                                             </button>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial2" id="4NQ-ev-rha">
@@ -156,7 +157,7 @@
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="onSkip3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FR4-st-hxd"/>
+                                                    <segue destination="ja6-VJ-MEW" kind="modal" id="itM-RF-t9A"/>
                                                 </connections>
                                             </button>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial3" id="Qcr-4D-7Aj">
@@ -171,11 +172,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ylI-Ji-7Om">
-                                                <rect key="frame" x="72" y="483" width="177" height="41"/>
+                                                <rect key="frame" x="72" y="467" width="177" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="playNowIcon"/>
                                                 <connections>
-                                                    <action selector="onStartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P6o-A2-jLu"/>
+                                                    <action selector="onStartGame:" destination="dto-al-UQx" eventType="touchUpInside" id="vog-wi-qRP"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial4" id="wfZ-dj-C9F">
@@ -199,101 +200,12 @@
                     <connections>
                         <outlet property="pageControl" destination="gUm-Jy-utl" id="69Z-JJ-bw2"/>
                         <outlet property="scrollView" destination="C0H-Zz-rL9" id="vb6-aW-ToA"/>
-                        <outlet property="startButton" destination="ylI-Ji-7Om" id="gW6-gw-mb7"/>
+                        <segue destination="wdp-Ed-q91" kind="modal" identifier="StartGame" id="aCN-y4-x0t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J18-AK-J9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="274" y="-951"/>
-        </scene>
-        <!--Tutorial View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="TutorialViewController" id="BYZ-38-t0r" customClass="TutorialViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="y83-x7-a2w">
-                        <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="center" id="Yjz-9Q-50p">
-                                <rect key="frame" x="640" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial3" id="ujV-bT-fHc">
-                                        <rect key="frame" x="31" y="119" width="258" height="306"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fsh-Tj-VQx">
-                                        <rect key="frame" x="72" y="487" width="177" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="playNowIcon"/>
-                                        <connections>
-                                            <action selector="onStartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VDP-do-maG"/>
-                                            <segue destination="ja6-VJ-MEW" kind="modal" identifier="StartGame" id="lHo-yA-G0z"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="center" id="sMA-Zp-DFV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vyW-5o-bOk">
-                                        <rect key="frame" x="244" y="32" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <state key="normal" title="Skip">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onSkip3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t05-wB-84k"/>
-                                            <segue destination="ja6-VJ-MEW" kind="modal" identifier="SkipTutorial1" id="ZFi-gR-SAR"/>
-                                        </connections>
-                                    </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial1" id="eyr-6q-SbC">
-                                        <rect key="frame" x="40" y="138" width="240" height="291"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="jvA-f8-lhb">
-                                        <rect key="frame" x="129" y="510" width="62" height="37"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </pageControl>
-                                </subviews>
-                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="center" id="J4L-EO-CHx">
-                                <rect key="frame" x="320" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qBe-jy-T4y">
-                                        <rect key="frame" x="262" y="28" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <state key="normal" title="Skip">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onSkip2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJF-qz-Vp8"/>
-                                            <segue destination="ja6-VJ-MEW" kind="modal" identifier="SkipTutorial2" id="be9-HM-05t"/>
-                                        </connections>
-                                    </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial2" id="tSg-Mk-5pl">
-                                        <rect key="frame" x="29" y="165" width="263" height="259"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                        </subviews>
-                    </scrollView>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="960" height="568"/>
-                    <connections>
-                        <outlet property="pageControl" destination="jvA-f8-lhb" id="LDo-CL-ADI"/>
-                        <outlet property="scrollView" destination="y83-x7-a2w" id="d0W-nJ-zMP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="594" y="-309"/>
+            <point key="canvasLocation" x="806" y="-309"/>
         </scene>
         <!--Category View Controller-->
         <scene sceneID="Oam-oC-KLP">
@@ -391,7 +303,7 @@
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="Fb5-xv-U8b"/>
+                                    <segue destination="dto-al-UQx" kind="modal" id="1kb-pG-vnJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r1t-QD-Kev">
@@ -786,7 +698,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0jy-l9-EdU">
-                                <rect key="frame" x="189" y="212" width="68" height="59"/>
+                                <rect key="frame" x="189" y="209" width="68" height="59"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="45"/>
                                 <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -822,7 +734,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sgE-MW-OUw">
-                                <rect key="frame" x="75" y="213" width="48" height="58"/>
+                                <rect key="frame" x="75" y="210" width="48" height="58"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="45"/>
                                 <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -962,8 +874,9 @@
         <image name="yesButton" width="66" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="M8S-fS-N28"/>
         <segue reference="dBX-rf-dVe"/>
-        <segue reference="JmO-OD-Mpi"/>
+        <segue reference="aCN-y4-x0t"/>
         <segue reference="85G-Rq-CK9"/>
     </inferredMetricsTieBreakers>
 </document>

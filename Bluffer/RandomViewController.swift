@@ -28,6 +28,8 @@ class RandomViewController: ImagesViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("RandomViewController Loaded. Image array size: ", randomImages.capacity)
 
         // Do any additional setup after loading the view.
     }

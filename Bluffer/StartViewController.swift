@@ -33,6 +33,21 @@ class StartViewController: UIViewController {
         
         UIView.animateWithDuration(1.2, delay: 1, options: [UIViewAnimationOptions.Repeat, UIViewAnimationOptions.Autoreverse], animations: { () -> Void in self.logoView.transform = CGAffineTransformMakeScale(1.2, 1.2); self.logoView.alpha = 1}, completion: nil)
     }
+    
+//    override func shouldAutorotate() -> Bool {
+//        if (UIDevice.currentDevice().orientation == UIDeviceOrientation.LandscapeLeft ||
+//            UIDevice.currentDevice().orientation == UIDeviceOrientation.LandscapeRight ||
+//            UIDevice.currentDevice().orientation == UIDeviceOrientation.Unknown) {
+//                return false
+//        }
+//        else {
+//            return true
+//        }
+//    }
+//    
+//    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+//        return [UIInterfaceOrientationMask.Portrait ,UIInterfaceOrientationMask.PortraitUpsideDown]
+//    }
 
     /*
     // MARK: - Navigation

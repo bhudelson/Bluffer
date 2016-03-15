@@ -23,8 +23,8 @@ class ScoreViewController: UIViewController {
     
     @IBAction func switchTeams(sender: AnyObject) {
         
-        print("ScoreView - Current Round: ", round)
-        print("ScoreView Rounds Remaining: ", totalRounds - round)
+        print("ScoreView - Current Round: ", gameRound)
+        print("ScoreView Rounds Remaining: ", totalRounds - gameRound)
         print("ScoreView - Team 1 Score: ", team1Score, " vs. Team 2 Score: ", team2Score)
         
         // Switch to other team, start new round
@@ -55,26 +55,26 @@ class ScoreViewController: UIViewController {
         
         print("ScoreViewController Appeared")
         
-        if round % 2 == 0 && correctGuess == true {
+        if gameRound % 2 == 0 && correctGuess == true {
             //EVEN ROUND = Team 2 described, Team 1 guessed correctly
             //Team 1 gets a point
             
             scoreHeadline.text = "TEAM  1  SCORES!"
         }
-        else if round % 2 != 0 && correctGuess == true {
+        else if gameRound % 2 != 0 && correctGuess == true {
             //ODD ROUND = Team 1 described, Team 2 guessed correctly
             //Team 2 gets a point
             
             scoreHeadline.text = "TEAM  2  SCORES!"
         }
-        else if correctGuess == false && round % 2 == 0 {
+        else if correctGuess == false && gameRound % 2 == 0 {
             
             //Round is EVEN. Team 2 described and Team 1 guessed incorrectly
             //So team 2 gets a point
             
             scoreHeadline.text = "TEAM  2  SCORES!"
         }
-        else if correctGuess == false && round % 2 != 0
+        else if correctGuess == false && gameRound % 2 != 0
         {
             //Round is ODD. Team 1 described and Team 2 guessed incorrectly
             //So team 1 gets a point
@@ -93,10 +93,10 @@ class ScoreViewController: UIViewController {
         scoreLabel1.text = String(team1Score)
         scoreLabel2.text = String(team2Score)
         
-        print("Current Round: ", round)
-        print("Rounds Remaining: ", totalRounds - round)
+        print("Current Round: ", gameRound)
+        print("Rounds Remaining: ", totalRounds - gameRound)
         
-        roundsRemaining.text = String(totalRounds-round)
+        roundsRemaining.text = String(totalRounds-gameRound)
         
     }
 

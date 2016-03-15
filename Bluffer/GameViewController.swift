@@ -37,9 +37,9 @@ class GameViewController: UIViewController {
         
         print("First Round Started")
         
-        round = ++round
+        gameRound = ++gameRound
         
-        print("Current Round: ", round)
+        print("Current Round: ")
         
         readyViewController.view.hidden = false
         readyViewController.reloadData()
@@ -52,10 +52,10 @@ class GameViewController: UIViewController {
         scoreViewController.view.hidden = true
         guessViewController.view.hidden = true
         
-        round = ++round
+        gameRound = ++gameRound
         
         
-        if round > totalRounds
+        if gameRound > totalRounds
         {
             print("Game Over")
             victoryViewController.reloadData()
@@ -67,7 +67,7 @@ class GameViewController: UIViewController {
             
             print("Round Started")
             
-            print("Current Round: ", round)
+            print("Current Round: ", gameRound)
             
             readyViewController.reloadData()
             readyViewController.view.hidden = false
@@ -191,7 +191,7 @@ class GameViewController: UIViewController {
     
     func trackPoint() {
         
-        if correctGuess == true && round % 2 == 0 {
+        if correctGuess == true && gameRound % 2 == 0 {
             
             //Round is EVEN. Team 2 described and Team 1 guessed correctly
             //So team 1 gets a point
@@ -202,7 +202,7 @@ class GameViewController: UIViewController {
             print("Round is Even. Team 2 got image, Team 1 guesses correctly")
             print("Team 1 Score: ", team1Score)
         }
-        else if correctGuess == true && round % 2 != 0
+        else if correctGuess == true && gameRound % 2 != 0
         {
             //Round is ODD. Team 1 described and Team 2 guessed
             //So team 2 gets a point
@@ -213,7 +213,7 @@ class GameViewController: UIViewController {
             print("Team 2 Score: ", team2Score)
             
         }
-        else if correctGuess == false && round % 2 == 0 {
+        else if correctGuess == false && gameRound % 2 == 0 {
             
             //Round is EVEN. Team 2 described and Team 1 guessed incorrectly
             //So team 2 gets a point
@@ -223,7 +223,7 @@ class GameViewController: UIViewController {
             print("Round is Even. Team 2 got image, Team 1 guessed INCORRECTLY")
             print("Team 2 Score: ", team2Score)
         }
-        else if correctGuess == false && round % 2 != 0
+        else if correctGuess == false && gameRound % 2 != 0
         {
             //Round is ODD. Team 1 described and Team 2 guessed incorrectly
             //So team 1 gets a point

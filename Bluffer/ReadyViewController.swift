@@ -19,7 +19,7 @@ class ReadyViewController: UIViewController {
     @IBAction func onReady(sender: AnyObject) {
         
         print("ReadyView - Team Describing: ", team.text)
-        print("ReadyView - Current Round: ", round)
+        print("ReadyView - Current Round: ")
 
         
 //        gameViewController.showImage()
@@ -47,7 +47,7 @@ class ReadyViewController: UIViewController {
     }
     
     func reloadData() {
-        if round > 0 && round % 2 == 0 {
+        if gameRound > 0 && gameRound % 2 == 0 {
             // Even Round = Team 2 describes
             team.text = "TEAM 2  GET  READY!"
         }

@@ -24,7 +24,7 @@ class GuessViewController: UIViewController {
     
         correctGuess = true
         
-        print("GuessView - Current Round: ", round)
+        print("GuessView - Current Round: ")
         print("GuessView - Team 1 Score: ", team1Score, " vs. Team 2 Score: ", team2Score)
         
         print("GuessView - Correct Guess. Increment score for guessing team.")
@@ -33,7 +33,7 @@ class GuessViewController: UIViewController {
         
         gameViewController.trackPoint()
         
-        if round == totalRounds
+        if gameRound == totalRounds
         {
             gameViewController.nextRound()
             
@@ -46,7 +46,7 @@ class GuessViewController: UIViewController {
         
         correctGuess = false
         
-        print("GuessView - Current Round: ", round)
+        print("GuessView - Current Round: ", gameRound)
         print("GuessView - Team 1 Score: ", team1Score, " vs. Team 2 Score: ", team2Score)
         
         print("GuessView - Incorrect Guess. Increment score for describing team.")
@@ -55,7 +55,7 @@ class GuessViewController: UIViewController {
         
         gameViewController.trackPoint()
         
-        if round == totalRounds
+        if gameRound == totalRounds
         {
             gameViewController.nextRound()
         }

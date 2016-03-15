@@ -13,7 +13,7 @@ import UIKit
 
 // GAME TRACKING
 var newGame = false
-var round = 0
+var gameRound = 0
 var totalRounds = 4
 
 var category = String("none")
@@ -31,7 +31,7 @@ func resetGame() {
     
     print("resetGame function called")
     
-    round = 0
+    gameRound = 0
     category = "none"
     team1Score = 0
     team2Score = 0
