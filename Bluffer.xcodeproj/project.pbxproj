@@ -20,6 +20,8 @@
 		CC2CFE711C8E8C3D003A6498 /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2CFE6A1C8E8C3D003A6498 /* Dosis-SemiBold.ttf */; };
 		CC41153D1C94F9F40053E5C1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41153C1C94F9F40053E5C1 /* Common.swift */; };
 		CC41153F1C95050C0053E5C1 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41153E1C95050C0053E5C1 /* WalkthroughViewController.swift */; };
+		CC839C471C9A83EE00196F1C /* BeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC839C461C9A83EE00196F1C /* BeginViewController.swift */; };
+		CCA586FB1C9A4CF4007D5DAB /* UnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA586FA1C9A4CF4007D5DAB /* UnlockViewController.swift */; };
 		CD827DA11C7FD4CE005F881D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD827DA01C7FD4CE005F881D /* Main.storyboard */; };
 		CD827DA31C7FDB17005F881D /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA21C7FDB17005F881D /* ReadyViewController.swift */; };
 		CD827DA51C7FE43F005F881D /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD827DA41C7FE43F005F881D /* GuessViewController.swift */; };
@@ -53,6 +55,8 @@
 		CC2CFE6A1C8E8C3D003A6498 /* Dosis-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-SemiBold.ttf"; sourceTree = "<group>"; };
 		CC41153C1C94F9F40053E5C1 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CC41153E1C95050C0053E5C1 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WalkthroughViewController.swift; path = ../WalkthroughViewController.swift; sourceTree = "<group>"; };
+		CC839C461C9A83EE00196F1C /* BeginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginViewController.swift; sourceTree = "<group>"; };
+		CCA586FA1C9A4CF4007D5DAB /* UnlockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockViewController.swift; sourceTree = "<group>"; };
 		CD827DA01C7FD4CE005F881D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CD827DA21C7FDB17005F881D /* ReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
 		CD827DA41C7FE43F005F881D /* GuessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				CC109B401C7C17FA00606C4B /* AppDelegate.swift */,
 				CC109B421C7C17FA00606C4B /* ViewController.swift */,
 				CD827DA01C7FD4CE005F881D /* Main.storyboard */,
+				CC839C461C9A83EE00196F1C /* BeginViewController.swift */,
 				CC41153C1C94F9F40053E5C1 /* Common.swift */,
 				CC109B471C7C17FA00606C4B /* Assets.xcassets */,
 				CC109B491C7C17FA00606C4B /* LaunchScreen.storyboard */,
@@ -137,6 +142,7 @@
 				CDB3740A1C88E4D7003300A5 /* SpaceViewController.swift */,
 				CDB3740C1C88E5A0003300A5 /* AnimalsViewController.swift */,
 				CDB3740E1C88E88D003300A5 /* RandomViewController.swift */,
+				CCA586FA1C9A4CF4007D5DAB /* UnlockViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -230,11 +236,13 @@
 				CDB3740F1C88E88D003300A5 /* RandomViewController.swift in Sources */,
 				CDB3740D1C88E5A0003300A5 /* AnimalsViewController.swift in Sources */,
 				CDFC6EF51C7FC92C00CF2C9F /* CategoryViewController.swift in Sources */,
+				CCA586FB1C9A4CF4007D5DAB /* UnlockViewController.swift in Sources */,
 				CC109B431C7C17FA00606C4B /* ViewController.swift in Sources */,
 				CDB3740B1C88E4D7003300A5 /* SpaceViewController.swift in Sources */,
 				CD827DA91C7FE45F005F881D /* VictoryViewController.swift in Sources */,
 				CD827DA51C7FE43F005F881D /* GuessViewController.swift in Sources */,
 				CDB374091C88D209003300A5 /* ImagesViewController.swift in Sources */,
+				CC839C471C9A83EE00196F1C /* BeginViewController.swift in Sources */,
 				CD827DA71C7FE44B005F881D /* ScoreViewController.swift in Sources */,
 				CDFC6EF31C7FB98000CF2C9F /* TutorialViewController.swift in Sources */,
 				CC109B411C7C17FA00606C4B /* AppDelegate.swift in Sources */,
