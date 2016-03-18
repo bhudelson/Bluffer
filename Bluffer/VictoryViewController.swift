@@ -10,7 +10,7 @@ import UIKit
 
 class VictoryViewController: UIViewController {
     
-    @IBOutlet weak var cheerleadersImage: UIImageView!
+    @IBOutlet weak var cheerImage: UIImageView!
     
     var gameViewController: GameViewController!
 
@@ -35,28 +35,39 @@ class VictoryViewController: UIViewController {
         
         print("Exit To Splash")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let startViewController = storyboard.instantiateInitialViewController()
+        let BeginViewController = storyboard.instantiateInitialViewController()
         
         let application = UIApplication.sharedApplication()
-        application.keyWindow?.rootViewController = startViewController
+        application.keyWindow?.rootViewController = BeginViewController
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print("VictoryViewController Did Load")
-        // Do any additional setup after loading the view.
+        
+        
+        var imagesNames = ["cheer1", "cheer2", "cheer3", "cheer4", "cheer5", "cheer6", "cheer7", "cheer8", "cheer9", "cheer10", "cheer11", "cheer12", "cheer13", "cheer14", "cheer15", "cheer16"]
+        
+        
+        var images = [UIImage]()
+        
+        
+        for i in 0..<imagesNames.count{
+            
+            images.append(UIImage(named: imagesNames[i])!)
+            
+        }
+        
+        cheerImage.animationImages = images
+        cheerImage.animationDuration = 3
+        cheerImage.startAnimating()
     }
     
     override func viewDidAppear(animated: Bool) {
         
         print("VictoryViewController Did Appear")
         
-        cheerleadersImage.transform = CGAffineTransformMakeScale(0.9, 0.9)
-        cheerleadersImage.alpha = 0.7
-        
-        
-        UIView.animateWithDuration(0.5, delay: 0, options: [UIViewAnimationOptions.Repeat, UIViewAnimationOptions.Autoreverse], animations: { () -> Void in self.cheerleadersImage.transform = CGAffineTransformMakeScale(1, 1); self.cheerleadersImage.alpha = 1}, completion: nil)
         
         reloadData()
         

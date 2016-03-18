@@ -17,9 +17,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogo" id="vRB-zf-bJ9">
-                                <rect key="frame" x="0.0" y="168" width="320" height="232"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blufferBlack" id="YSb-ah-FlG">
+                                <rect key="frame" x="0.0" y="206" width="320" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -31,7 +31,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blufferBlack" width="187" height="36"/>
         <image name="homeBg-1" width="320" height="568"/>
-        <image name="splashLogo" width="227" height="227"/>
     </resources>
 </document>
