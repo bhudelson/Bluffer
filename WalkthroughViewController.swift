@@ -17,7 +17,7 @@ class WalkthroughViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: 1280, height: 568)
+        scrollView.contentSize = CGSize(width: 1280, height: 736)
         scrollView.delegate = self
         
 
