@@ -11,6 +11,7 @@ import UIKit
 class ScoreViewController: UIViewController {
     @IBOutlet weak var passLabel: UILabel!
     
+    
     var gameViewController: GameViewController!
 
     @IBOutlet weak var scoreHeadline: UILabel!
@@ -31,9 +32,12 @@ class ScoreViewController: UIViewController {
         gameViewController.nextRound()
     }
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }

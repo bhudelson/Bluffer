@@ -8,6 +8,8 @@
 
 import UIKit
 
+var currentImage: UIImage!
+
 class GameViewController: UIViewController {
     
     //Child ViewControllers - DECLARATION
@@ -170,7 +172,9 @@ class GameViewController: UIViewController {
         currentCategoryViewController.view.alpha = 1 
         currentCategoryViewController.view.hidden = false
         
-        currentCategoryViewController.setCurrentImage(currentCategoryViewController.selectRandomIndex())
+        let index = currentCategoryViewController.selectRandomIndex()
+        currentImage = currentCategoryViewController.imageArray[index]
+        currentCategoryViewController.setCurrentImage(index)
         
         //Select random index that hasn't been selected before during gameplay
         
