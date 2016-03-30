@@ -14,7 +14,7 @@ import UIKit
 // GAME TRACKING
 var newGame = false
 var gameRound = 0
-var totalRounds = 2
+var totalRounds = 3
 
 var category = String("none")
 
@@ -22,7 +22,7 @@ var team1Score = 0
 var team2Score = 0
 
 //Duration in seconds of image guess time
-var gameTime = 1
+var gameTime = 2
 
 //Used to track whether a team scored a point in the current round
 var correctGuess : Bool = false

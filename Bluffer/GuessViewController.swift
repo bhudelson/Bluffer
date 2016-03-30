@@ -10,12 +10,36 @@ import UIKit
 
 class GuessViewController: UIViewController {
 
+    
+    @IBOutlet weak var askLabel: UILabel!
+    @IBOutlet weak var bubbleButton: UIButton!
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var noButton: UIButton!
+    @IBOutlet weak var yesButton: UIButton!
+    
     var gameViewController: GameViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        print("Prompt Text Appeared")
+        
+        askLabel.alpha = 1
+        bubbleButton.alpha = 1
+        questionLabel.alpha = 0
+        yesButton.alpha = 0
+        noButton.alpha = 0
+        
+        
+        UIView.animateWithDuration(1, delay: 13, options: [], animations: { () -> Void in self.questionLabel.alpha = 1; self.yesButton.alpha = 1; self.noButton.alpha = 1 }, completion: nil)
+        
+        UIView.animateWithDuration(1, delay: 12, options: [], animations: { () -> Void in self.askLabel.alpha = 0; self.bubbleButton.alpha = 0 }, completion: nil)
+        
     }
     
     
@@ -68,6 +92,7 @@ class GuessViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+   
 
     /*
     // MARK: - Navigation

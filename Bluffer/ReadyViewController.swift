@@ -10,6 +10,10 @@ import UIKit
 
 class ReadyViewController: UIViewController {
 
+    @IBOutlet weak var tryLabel: UILabel!
+    @IBOutlet weak var orLabel: UILabel!
+    @IBOutlet weak var describeLabel: UILabel!
+    
     @IBOutlet weak var team: UILabel!
     @IBOutlet weak var startButton: UIButton!
     
@@ -40,6 +44,13 @@ class ReadyViewController: UIViewController {
         startButton.transform = CGAffineTransformMakeScale(0.9, 0.9)
         startButton.alpha = 0.6
         
+        tryLabel.alpha = 0
+        orLabel.alpha = 0
+        describeLabel.alpha = 0
+        
+        
+        
+        UIView.animateWithDuration(1, delay: 3, options: [], animations: { () -> Void in self.describeLabel.alpha = 1; self.orLabel.alpha = 1; self.tryLabel.alpha = 1 }, completion: nil)
         
         UIView.animateWithDuration(1.2, delay: 0, options: [UIViewAnimationOptions.Repeat, UIViewAnimationOptions.Autoreverse], animations: { () -> Void in self.startButton.transform = CGAffineTransformMakeScale(1, 1); self.startButton.alpha = 1}, completion: nil)
         
