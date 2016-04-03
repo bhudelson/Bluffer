@@ -36,9 +36,9 @@ class GuessViewController: UIViewController {
         noButton.alpha = 0
         
         
-        UIView.animateWithDuration(1, delay: 13, options: [], animations: { () -> Void in self.questionLabel.alpha = 1; self.yesButton.alpha = 1; self.noButton.alpha = 1 }, completion: nil)
+        UIView.animateWithDuration(1, delay: 10, options: [], animations: { () -> Void in self.questionLabel.alpha = 1; self.yesButton.alpha = 1; self.noButton.alpha = 1 }, completion: nil)
         
-        UIView.animateWithDuration(1, delay: 12, options: [], animations: { () -> Void in self.askLabel.alpha = 0; self.bubbleButton.alpha = 0 }, completion: nil)
+        UIView.animateWithDuration(1, delay: 9, options: [], animations: { () -> Void in self.askLabel.alpha = 0; self.bubbleButton.alpha = 0 }, completion: nil)
         
     }
     

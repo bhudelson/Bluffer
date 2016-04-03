@@ -97,23 +97,23 @@
             <objects>
                 <viewController id="dto-al-UQx" customClass="WalkthroughViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rsb-Y8-fjq">
-                        <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1500" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="C0H-Zz-rL9">
-                                <rect key="frame" x="0.0" y="0.0" width="378" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="568"/>
                                 <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="M66-cb-iKS" userLabel="bg1">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial1" id="cOz-Il-Nm8">
-                                                <rect key="frame" x="40" y="139" width="240" height="291"/>
+                                                <rect key="frame" x="26" y="138" width="324" height="291"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xD5-Id-RcF">
-                                                <rect key="frame" x="269" y="19" width="30" height="30"/>
+                                                <rect key="frame" x="330" y="20" width="30" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,11 +126,11 @@
                                         <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="Q2t-tK-o9h" userLabel="bg2">
-                                        <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                        <rect key="frame" x="375" y="0.0" width="375" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u7w-a0-0ko">
-                                                <rect key="frame" x="263" y="25" width="30" height="30"/>
+                                                <rect key="frame" x="330" y="24" width="30" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -139,19 +139,19 @@
                                                     <segue destination="ja6-VJ-MEW" kind="modal" id="v1M-ea-NiI"/>
                                                 </connections>
                                             </button>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial2" id="4NQ-ev-rha">
-                                                <rect key="frame" x="28" y="155" width="263" height="259"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="truthfullyDescribe" id="4NQ-ev-rha">
+                                                <rect key="frame" x="56" y="52" width="263" height="382"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="S5A-Tp-39b" userLabel="bg3">
-                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                        <rect key="frame" x="750" y="0.0" width="375" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NBG-0r-0jV">
-                                                <rect key="frame" x="275" y="22" width="30" height="30"/>
+                                                <rect key="frame" x="329" y="22" width="30" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -160,43 +160,43 @@
                                                     <segue destination="ja6-VJ-MEW" kind="modal" id="itM-RF-t9A"/>
                                                 </connections>
                                             </button>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial3" id="Qcr-4D-7Aj">
-                                                <rect key="frame" x="31" y="131" width="258" height="306"/>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="canImage2" id="Qcr-4D-7Aj">
+                                                <rect key="frame" x="55" y="131" width="265" height="306"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="GR8-KU-LqT" userLabel="bg4">
-                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                        <rect key="frame" x="1125" y="0.0" width="375" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial4" id="wfZ-dj-C9F">
+                                                <rect key="frame" x="40" y="156" width="295" height="257"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ylI-Ji-7Om">
-                                                <rect key="frame" x="72" y="467" width="177" height="41"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="99" y="468" width="177" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                                 <state key="normal" image="playNowIcon"/>
                                                 <connections>
                                                     <segue destination="ja6-VJ-MEW" kind="modal" id="z5C-ee-qzq"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial4" id="wfZ-dj-C9F">
-                                                <rect key="frame" x="40" y="156" width="240" height="257"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="gUm-Jy-utl">
-                                <rect key="frame" x="127" y="511" width="66" height="37"/>
+                                <rect key="frame" x="155" y="511" width="66" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="1280" height="568"/>
+                    <size key="freeformSize" width="1500" height="568"/>
                     <connections>
                         <outlet property="pageControl" destination="gUm-Jy-utl" id="69Z-JJ-bw2"/>
                         <outlet property="scrollView" destination="C0H-Zz-rL9" id="vb6-aW-ToA"/>
@@ -467,7 +467,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qIU-fX-7pP">
                                 <rect key="frame" x="72" y="576.5" width="232" height="48.5"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <state key="normal" image="startIcon"/>
+                                <state key="normal" image="startButton2"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5xE-Rc-sgk">
                                 <rect key="frame" x="0.0" y="317" width="375" height="49"/>
@@ -681,7 +681,6 @@
         <!--Guess View Controller-->
         <scene sceneID="BYT-ps-gIA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JsL-7e-yvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="GuessViewController" id="Q1s-Kf-bhG" customClass="GuessViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KWK-jV-koS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -733,7 +732,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="askLabel" destination="UUn-gO-Qw1" id="32J-I3-QN0"/>
                         <outlet property="bubbleButton" destination="n2l-aS-omZ" id="dNP-Cf-btc"/>
@@ -742,6 +742,7 @@
                         <outlet property="yesButton" destination="rad-jw-Drd" id="wxj-78-Ex8"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JsL-7e-yvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1845.5" y="440.5"/>
         </scene>
@@ -818,14 +819,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASS DEVICE TO OTHER TEAM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rcC-Wg-AfW">
                                 <rect key="frame" x="57" y="535" width="263" height="28"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="22"/>
                                 <color key="textColor" red="0.88481570509999996" green="0.88481570509999996" blue="0.88481570509999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hO6-IB-r2w">
                                 <rect key="frame" x="135" y="319" width="97" height="145"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="36"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -834,14 +835,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AlM-By-87A">
-                                        <rect key="frame" x="5" y="27" width="69" height="28"/>
+                                        <rect key="frame" x="-14" y="27" width="69" height="28"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="arrowWhite"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U2G-Jy-uZY">
-                                        <rect key="frame" x="16" y="11" width="128" height="67.5"/>
+                                        <rect key="frame" x="6" y="11" width="128" height="67.5"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="reviewImageWhiteText"/>
+                                        <state key="normal" image="reviewImageAllCaps"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BY4-i7-5bK">
                                         <rect key="frame" x="3" y="-2" width="145" height="81"/>
@@ -857,14 +858,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iXb-iV-zxn">
-                                        <rect key="frame" x="12" y="10" width="128" height="67.5"/>
+                                        <rect key="frame" x="30" y="10" width="128" height="67.5"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="nextRoundGreenText2"/>
+                                        <state key="normal" image="nextRoundAllCaps"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="byc-Ym-mVQ">
-                                        <rect key="frame" x="75" y="27" width="69" height="28"/>
+                                        <rect key="frame" x="103" y="27" width="69" height="28"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="arrowGreen"/>
+                                        <state key="normal" image="yellowArrow"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1oe-l9-J97">
                                         <rect key="frame" x="14" y="5" width="129" height="66"/>
@@ -959,9 +960,9 @@
                                         <state key="normal" image="arrowWhite"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1HM-Gi-RGA">
-                                        <rect key="frame" x="16" y="11" width="73" height="56"/>
+                                        <rect key="frame" x="18" y="11" width="73" height="56"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="reviewImageWhiteText"/>
+                                        <state key="normal" image="reviewImageAllCaps"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lpf-uq-iJi">
                                         <rect key="frame" x="3" y="-2" width="90" height="81"/>
@@ -977,9 +978,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9TR-HN-Wqj">
-                                        <rect key="frame" x="12" y="10" width="73" height="56"/>
+                                        <rect key="frame" x="10" y="10" width="73" height="56"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="playAgain2-1"/>
+                                        <state key="normal" image="playAgainAllCaps"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bD9-Xh-Gti">
                                         <rect key="frame" x="75" y="27" width="14" height="22"/>
@@ -997,7 +998,7 @@
                                 </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dqi-hV-7Qx">
-                                <rect key="frame" x="145" y="515" width="30" height="30"/>
+                                <rect key="frame" x="145" y="526" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Exit ">
@@ -1025,7 +1026,6 @@
     <resources>
         <image name="PoliticsIcon" width="80" height="80"/>
         <image name="animalIcon" width="80" height="80"/>
-        <image name="arrowGreen" width="14" height="14"/>
         <image name="arrowWhite" width="14" height="14"/>
         <image name="arrowWhiteRight" width="15" height="15"/>
         <image name="blackCircle" width="65" height="65"/>
@@ -1033,6 +1033,7 @@
         <image name="blueYes" width="96" height="96"/>
         <image name="blufferBlack" width="187" height="36"/>
         <image name="bush" width="320" height="568"/>
+        <image name="canImage2" width="258" height="306"/>
         <image name="done2" width="120" height="40"/>
         <image name="eightiesIcon" width="80" height="80"/>
         <image name="homeBg-1" width="320" height="568"/>
@@ -1040,33 +1041,33 @@
         <image name="kim" width="320" height="568"/>
         <image name="lincoln" width="320" height="568"/>
         <image name="lion2" width="229" height="255"/>
-        <image name="nextRoundGreenText2" width="44" height="35"/>
+        <image name="nextRoundAllCaps" width="54" height="35"/>
         <image name="pinkNo" width="96" height="96"/>
-        <image name="playAgain2-1" width="42" height="40"/>
+        <image name="playAgainAllCaps" width="47" height="35"/>
         <image name="playNowIcon" width="177" height="41"/>
         <image name="proBg" width="320" height="568"/>
         <image name="purchaseNow" width="275" height="55"/>
         <image name="putin" width="320" height="568"/>
         <image name="randomIcon" width="80" height="80"/>
-        <image name="reviewImageWhiteText" width="50" height="39"/>
+        <image name="reviewImageAllCaps" width="60" height="35"/>
         <image name="rushmore" width="320" height="568"/>
         <image name="scoreBoardLarge2" width="414" height="187"/>
         <image name="spaceIcon" width="80" height="80"/>
         <image name="speechBubbleKLarge" width="414" height="481"/>
+        <image name="startButton2" width="213" height="49"/>
         <image name="startCircle" width="98" height="98"/>
-        <image name="startIcon" width="177" height="41"/>
         <image name="tropicalIcon" width="80" height="80"/>
         <image name="trump" width="320" height="568"/>
+        <image name="truthfullyDescribe" width="273" height="367"/>
         <image name="tutorial1" width="240" height="291"/>
-        <image name="tutorial2" width="263" height="259"/>
-        <image name="tutorial3" width="258" height="306"/>
         <image name="tutorial4" width="132" height="241"/>
         <image name="winPageBg" width="320" height="568"/>
+        <image name="yellowArrow" width="14" height="15"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eBz-Aw-QUI"/>
         <segue reference="lIS-JS-bTQ"/>
-        <segue reference="srD-ej-dFe"/>
+        <segue reference="z5C-ee-qzq"/>
         <segue reference="Kvi-lh-GpQ"/>
+        <segue reference="srD-ej-dFe"/>
     </inferredMetricsTieBreakers>
 </document>
