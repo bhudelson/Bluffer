@@ -24,6 +24,8 @@ class GameViewController: UIViewController {
     var spaceViewController: SpaceViewController!
     var animalsViewController: AnimalsViewController!
     var randomViewController: RandomViewController!
+    var tropicalViewController: TropicalViewController!
+    var eightiesViewController: EightiesViewController!
     
     var currentCategoryViewController: ImagesViewController!
     
@@ -144,10 +146,32 @@ class GameViewController: UIViewController {
             
             currentCategoryViewController.imageArray = randomViewController.randomImages
             
-        case "tropical"  :
-            print("Replace this line with tropical viewcontroller addition to parent")
+         case "tropical"  :
             
-        //ADD MORE CASES FOR ALL OF OUR CATEGORIES
+            // Add TropicalViewController as child of GameViewController
+            // Set it as currentCategoryViewController
+            
+            print("TropicalViewController added as child to GameViewController")
+            
+            tropicalViewController.view.hidden = true
+            addChildViewController(tropicalViewController)
+            contentView.addSubview(tropicalViewController.view)
+            tropicalViewController.didMoveToParentViewController(self)
+            
+            currentCategoryViewController.imageArray = tropicalViewController.tropicalImages
+            
+        case "eighties"  :
+            
+            print("EightiesViewController added as child to GameViewController")
+            
+            eightiesViewController.view.hidden = true
+            addChildViewController(eightiesViewController)
+            contentView.addSubview(eightiesViewController.view)
+            eightiesViewController.didMoveToParentViewController(self)
+            
+            currentCategoryViewController.imageArray = eightiesViewController.eightiesImages
+            
+        
 
         default :
             print( "ERROR OCCURRED / NO CATEGORY SELECTED")
@@ -311,6 +335,14 @@ class GameViewController: UIViewController {
         
         randomViewController = storyboard.instantiateViewControllerWithIdentifier("RandomViewController") as! RandomViewController
         randomViewController.gameViewController = self
+        
+        tropicalViewController = storyboard.instantiateViewControllerWithIdentifier("TropicalViewController") as! TropicalViewController
+        tropicalViewController.gameViewController = self
+        
+        eightiesViewController = storyboard.instantiateViewControllerWithIdentifier("EightiesViewController") as! EightiesViewController
+        eightiesViewController.gameViewController = self
+        
+        
         
         // Add Category View Controller as child
         addChildViewController(categoryViewController)

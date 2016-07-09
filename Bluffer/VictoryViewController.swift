@@ -47,7 +47,7 @@ class VictoryViewController: UIViewController {
         print("VictoryViewController Did Load")
         
         
-        var imagesNames = ["cheer1", "cheer2", "cheer3", "cheer4", "cheer5", "cheer6", "cheer7", "cheer8", "cheer9", "cheer10", "cheer11", "cheer12", "cheer13", "cheer14", "cheer15", "cheer16"]
+        var imagesNames = ["lucha1", "lucha2", "lucha3", "lucha4", "lucha5", "lucha6", "lucha7", "lucha8", "lucha9"]
         
         
         var images = [UIImage]()

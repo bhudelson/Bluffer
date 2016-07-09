@@ -11,18 +11,18 @@ import UIKit
 class AnimalsViewController: ImagesViewController {
     
     var animalsImages: [UIImage] = [
-        UIImage(named: "animals-bear.png")!,
-        UIImage(named: "animals-cockerspaniel.png")!,
-        UIImage(named: "animals-dog.png")!,
-        UIImage(named: "animals-elephant.png")!,
-        UIImage(named: "animals-horse.png")!,
-        UIImage(named: "animals-jockey.png")!,
-        UIImage(named: "animals-lion.png")!,
-        UIImage(named: "animals-pug.png")!,
-        UIImage(named: "animals-puppy.png")!,
-        UIImage(named: "animals-smokey.png")!,
-        UIImage(named: "animals-snail.png")!,
-        UIImage(named: "animals-yeti.png")!
+        UIImage(named: "bear.png")!,
+        UIImage(named: "cat.png")!,
+        UIImage(named: "goat.png")!,
+        UIImage(named: "grasshopper.png")!,
+        UIImage(named: "lion.png")!,
+        UIImage(named: "lost.png")!,
+        UIImage(named: "monkey.png")!,
+        UIImage(named: "ostrich.png")!,
+        UIImage(named: "pig.png")!,
+        UIImage(named: "puppy.png")!,
+        UIImage(named: "stuffedbear.png")!,
+        UIImage(named: "trex.png")!
     ]
 
 

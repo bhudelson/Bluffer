@@ -11,18 +11,18 @@ import UIKit
 class RandomViewController: ImagesViewController {
     
     var randomImages: [UIImage] = [
-        UIImage(named: "random-bill.png")!,
-        UIImage(named: "random-cage.png")!,
-        UIImage(named: "random-carey.png")!,
-        UIImage(named: "random-cricket.png")!,
-        UIImage(named: "random-diesel.png")!,
-        UIImage(named: "random-freeman.png")!,
-        UIImage(named: "random-jagger.png")!,
-        UIImage(named: "random-leno.png")!,
-        UIImage(named: "random-putin.png")!,
-        UIImage(named: "random-sandler.png")!,
-        UIImage(named: "random-valentinator.png")!,
-        UIImage(named: "random-wilson.png")!
+        UIImage(named: "action.png")!,
+        UIImage(named: "beard.png")!,
+        UIImage(named: "cow.png")!,
+        UIImage(named: "donuts.png")!,
+        UIImage(named: "lipstick.png")!,
+        UIImage(named: "mac.png")!,
+        UIImage(named: "moonshine.png")!,
+        UIImage(named: "moss.png")!,
+        UIImage(named: "plane.png")!,
+        UIImage(named: "skeleton.png")!,
+        UIImage(named: "tiny.png")!,
+        UIImage(named: "troll.png")!
     ]
 
 

@@ -11,18 +11,18 @@ import UIKit
 class SpaceViewController: ImagesViewController {
     
     var spaceImages: [UIImage] = [
-        UIImage(named: "space-car.png")!,
-        UIImage(named: "space-darth.png")!,
-        UIImage(named: "space-dinosaurastronaut.png")!,
-        UIImage(named: "space-dogastronaut.png")!,
-        UIImage(named: "space-europe.png")!,
-        UIImage(named: "space-giraffe.png")!,
-        UIImage(named: "space-madonna.png")!,
-        UIImage(named: "space-mcdonalds.png")!,
-        UIImage(named: "space-motel.png")!,
-        UIImage(named: "space-nixon.png")!,
-        UIImage(named: "space-scarlett.png")!,
-        UIImage(named: "space-yoda.png")!
+        UIImage(named: "bernie.png")!,
+        UIImage(named: "brand.png")!,
+        UIImage(named: "castanza.png")!,
+        UIImage(named: "chewy.png")!,
+        UIImage(named: "drake.png")!,
+        UIImage(named: "jamaica.png")!,
+        UIImage(named: "jarjar.png")!,
+        UIImage(named: "musk.png")!,
+        UIImage(named: "pirate.png")!,
+        UIImage(named: "spaceinvader.png")!,
+        UIImage(named: "spacejam.png")!,
+        UIImage(named: "starbucks.png")!
     ]
 
     override func viewDidLoad() {

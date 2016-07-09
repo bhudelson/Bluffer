@@ -15,7 +15,7 @@ class BeginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var imagesNames = ["guy1", "guy2", "guy3", "guy4"]
+        var imagesNames = ["combo1", "combo2", "combo3", "combo4"]
         
         
         var images = [UIImage]()

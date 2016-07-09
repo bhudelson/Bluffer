@@ -174,6 +174,26 @@ class CategoryViewController: UIViewController {
         
     }
     
+    @IBAction func selectTropical(sender: AnyObject) {
+        
+        category = "tropical"
+        print("Category Selected: ", category)
+        
+        // Start the game in GameViewController
+        gameViewController.categorySelected()
+        
+    }
+    
+    @IBAction func selectEighties(sender: AnyObject) {
+        
+        category = "eighties"
+        print("Category Selected: ", category)
+        
+        // Start the game in GameViewController
+        gameViewController.categorySelected()
+        
+    }
+    
     
     /*
     // MARK: - Navigation

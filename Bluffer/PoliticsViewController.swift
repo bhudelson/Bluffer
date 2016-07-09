@@ -11,18 +11,18 @@ import UIKit
 class PoliticsViewController: ImagesViewController {
     
     var politicsImages: [UIImage] = [
-        UIImage(named: "politics-bush.png")!,
-        UIImage(named: "politics-kim.png")!,
-        UIImage(named: "politics-lincoln.png")!,
-        UIImage(named: "politics-putin.png")!,
-        UIImage(named: "politics-rushmore.png")!,
-        UIImage(named: "politics-trump.png")!,
-        UIImage(named: "politics-borat.png")!,
-        UIImage(named: "politics-clinton.png")!,
-        UIImage(named: "politics-dance.png")!,
-        UIImage(named: "politics-obama.png")!,
-        UIImage(named: "politics-rocky.png")!,
-        UIImage(named: "politics-substitution.png")!
+        UIImage(named: "bigfoot.png")!,
+        UIImage(named: "bunny.png")!,
+        UIImage(named: "bush.png")!,
+        UIImage(named: "cheney.png")!,
+        UIImage(named: "cruise.png")!,
+        UIImage(named: "dino.png")!,
+        UIImage(named: "horse.png")!,
+        UIImage(named: "putin.png")!,
+        UIImage(named: "putin2.png")!,
+        UIImage(named: "rice.png")!,
+        UIImage(named: "thriller.png")!,
+        UIImage(named: "trump.png")!
     ]
 
     override func viewDidLoad() {
