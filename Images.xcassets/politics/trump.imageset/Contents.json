@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "trump.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "app icon2@2x.png",
       "scale" : "2x"
     },
     {
