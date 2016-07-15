@@ -38,7 +38,6 @@
             <string>Dosis-Regular</string>
             <string>Dosis-Regular</string>
             <string>Dosis-Regular</string>
-            <string>Dosis-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -77,8 +76,8 @@
                                     <segue destination="ja6-VJ-MEW" kind="modal" modalTransitionStyle="crossDissolve" id="eBz-Aw-QUI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blufferBlack" id="uHp-2P-gfS">
-                                <rect key="frame" x="0.0" y="98" width="320" height="55"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blufferBlack" id="uHp-2P-gfS">
+                                <rect key="frame" x="68" y="98" width="185" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -114,8 +113,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tutorial1" id="cOz-Il-Nm8">
-                                                <rect key="frame" x="26" y="48" width="324" height="381"/>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tutorial1" id="cOz-Il-Nm8">
+                                                <rect key="frame" x="22" y="51" width="331" height="381"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xD5-Id-RcF">
@@ -416,51 +415,6 @@
             </objects>
             <point key="canvasLocation" x="678" y="391"/>
         </scene>
-        <!--Unlock View Controller-->
-        <scene sceneID="0oR-Ao-bW6">
-            <objects>
-                <viewController id="NTF-Z5-FuA" customClass="UnlockViewController" customModule="Bluffer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="X5W-aj-rZ2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="proBg" id="4EC-oQ-P2u">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XIP-UI-SSC">
-                                <rect key="frame" x="54" y="196" width="276" height="309"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="lion2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="myF-9U-V7f">
-                                <rect key="frame" x="145" y="20" width="85" height="39"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="blackClose"/>
-                                <connections>
-                                    <action selector="onDismiss:" destination="NTF-Z5-FuA" eventType="touchUpInside" id="s6I-8Y-yTH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wob-Tg-WZP">
-                                <rect key="frame" x="20" y="566" width="335" height="81"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <state key="normal" image="purchaseNow"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase Bluffer Pro to Unlock Category" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eVT-Bu-a20">
-                                <rect key="frame" x="30" y="67" width="345" height="143"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="36"/>
-                                <color key="textColor" red="0.23529411759999999" green="0.22352941179999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nZ6-8s-ssb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="705.5" y="1211.5"/>
-        </scene>
         <!--Ready View Controller-->
         <scene sceneID="RlL-au-64J">
             <objects>
@@ -730,7 +684,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n2l-aS-omZ">
-                                <rect key="frame" x="-96" y="49" width="565" height="543"/>
+                                <rect key="frame" x="-149" y="-1" width="674" height="653"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="speechBubbleKLarge"/>
                             </button>
@@ -745,7 +699,7 @@
                                 <state key="normal" image="pinkNo"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask the other team to guess if you told the truth or bluffed..." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UUn-gO-Qw1">
-                                <rect key="frame" x="23" y="110" width="344" height="316"/>
+                                <rect key="frame" x="23" y="140" width="344" height="316"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1070,11 +1024,10 @@
         <image name="PoliticsIcon" width="80" height="80"/>
         <image name="animalIcon" width="80" height="80"/>
         <image name="arrowWhite" width="14" height="14"/>
-        <image name="arrowWhiteRight" width="15" height="15"/>
+        <image name="arrowWhiteRight" width="14" height="14"/>
         <image name="blackCircle" width="65" height="65"/>
-        <image name="blackClose" width="25" height="25"/>
         <image name="blueYes" width="96" height="96"/>
-        <image name="blufferBlack" width="187" height="36"/>
+        <image name="blufferBlack" width="244" height="46"/>
         <image name="bush" width="414" height="736"/>
         <image name="canImage2" width="258" height="306"/>
         <image name="done2" width="120" height="40"/>
@@ -1083,33 +1036,30 @@
         <image name="info" width="40" height="40"/>
         <image name="kim" width="320" height="568"/>
         <image name="lincoln" width="320" height="568"/>
-        <image name="lion2" width="229" height="255"/>
         <image name="nextRoundAllCaps" width="54" height="35"/>
         <image name="pinkNo" width="96" height="96"/>
         <image name="playAgainAllCaps" width="47" height="35"/>
         <image name="playNowIcon" width="177" height="41"/>
-        <image name="proBg" width="320" height="568"/>
-        <image name="purchaseNow" width="275" height="55"/>
         <image name="putin" width="414" height="736"/>
         <image name="randomIcon" width="80" height="80"/>
         <image name="reviewImageAllCaps" width="60" height="35"/>
         <image name="rushmore" width="320" height="568"/>
-        <image name="scoreBoardLarge2" width="414" height="187"/>
+        <image name="scoreBoardLarge2" width="320" height="187"/>
         <image name="spaceIcon" width="80" height="80"/>
-        <image name="speechBubbleKLarge" width="414" height="481"/>
-        <image name="startButton2" width="213" height="49"/>
-        <image name="startCircle" width="98" height="98"/>
+        <image name="speechBubbleKLarge" width="401" height="431"/>
+        <image name="startButton2" width="177" height="41"/>
+        <image name="startCircle" width="119" height="119"/>
         <image name="tropicalIcon" width="80" height="80"/>
         <image name="trump" width="414" height="736"/>
         <image name="truthfullyDescribe" width="273" height="367"/>
-        <image name="tutorial1" width="240" height="291"/>
+        <image name="tutorial1" width="720" height="873"/>
         <image name="tutorial4" width="132" height="241"/>
         <image name="winPageBg" width="320" height="568"/>
         <image name="yellowArrow" width="14" height="15"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eBz-Aw-QUI"/>
-        <segue reference="1kb-pG-vnJ"/>
+        <segue reference="lIS-JS-bTQ"/>
         <segue reference="srD-ej-dFe"/>
     </inferredMetricsTieBreakers>
 </document>

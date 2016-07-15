@@ -17,8 +17,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blufferBlack" id="YSb-ah-FlG">
-                                <rect key="frame" x="0.0" y="206" width="320" height="156"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blufferBlack" id="YSb-ah-FlG">
+                                <rect key="frame" x="55" y="206" width="211" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -31,7 +31,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blufferBlack" width="187" height="36"/>
+        <image name="blufferBlack" width="244" height="46"/>
         <image name="homeBg-1" width="320" height="568"/>
     </resources>
 </document>
