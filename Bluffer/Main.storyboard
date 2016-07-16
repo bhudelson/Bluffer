@@ -756,7 +756,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uDC-zc-0Ng">
-                                <rect key="frame" x="72" y="590" width="231" height="49"/>
+                                <rect key="frame" x="72" y="590.5" width="231" height="48.5"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="done2"/>
                                 <connections>
